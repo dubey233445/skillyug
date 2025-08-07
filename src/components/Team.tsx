@@ -10,7 +10,7 @@ const Team = () => {
       bio: "Full-stack developer with 8+ years of experience in building scalable web applications and leading development teams.",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
         twitter: "#",
         github: "#"
       }
