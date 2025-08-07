@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
+      name: "Vinayak pandey",
       role: "Founder & CEO",
       bio: "Full-stack developer with 8+ years of experience in building scalable web applications and leading development teams.",
       image: "/api/placeholder/300/300",
