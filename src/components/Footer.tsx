@@ -27,9 +27,9 @@ const Footer = () => {
 
   const socialLinks = [
     { name: "GitHub", icon: Github, href: "#" },
-    { name: "LinkedIn", icon: Linkedin, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
-    { name: "Email", icon: Mail, href: "mailto:hello@skillyug.com" }
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true" },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/skillyug063" },
+    { name: "Email", icon: Mail, href: "mailto:consultantskillyug@gmail.com" }
   ];
 
   const scrollToTop = () => {
