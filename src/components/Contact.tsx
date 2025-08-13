@@ -8,19 +8,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "hello@skillyug.com",
+      details: "consultantskillyug@gmail.com",
       description: "Send us an email anytime"
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
-      description: "Mon-Fri 9AM-6PM EST"
+      details: "+919953157887",
+      description: "9AM-12AM IST"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: "San Francisco, CA",
+      details: "Noida, Delhi",
       description: "Schedule an in-person meeting"
     }
   ];
@@ -118,7 +118,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   className="flex items-center space-x-2"
-                  onClick={() => window.open("mailto:hello@skillyug.com")}
+                  onClick={() => window.open("mailto:consultantskillyug@gmail.com")}
                 >
                   <Mail className="h-4 w-4" />
                   <span>Send Email</span>
@@ -126,7 +126,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   className="flex items-center space-x-2"
-                  onClick={() => window.open("tel:+15551234567")}
+                  onClick={() => window.open("tel:+919953157887")}
                 >
                   <Phone className="h-4 w-4" />
                   <span>Call Now</span>
