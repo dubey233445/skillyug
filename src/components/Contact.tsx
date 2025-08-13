@@ -15,7 +15,7 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       details: "+919953157887",
-      description: "9AM-12AM IST"
+      description: ""
     },
     {
       icon: MapPin,
