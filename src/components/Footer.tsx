@@ -75,13 +75,13 @@ const Footer = () => {
                 viewport={{ once: true }}
               >
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Email:</strong> hello@skillyug.com
+                  <strong className="text-foreground">Email:</strong> consultantskillyug@gmail.com
                 </p>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Phone:</strong> +1 (555) 123-4567
+                  <strong className="text-foreground">Phone:</strong> +919953157887
                 </p>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Location:</strong> San Francisco, CA
+                  <strong className="text-foreground">Location:</strong> Noida, UP
                 </p>
               </motion.div>
 
@@ -148,7 +148,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-muted-foreground text-sm">
-              © {currentYear} SKILLYUG. All rights reserved. Built with ❤️ using React & TypeScript.
+              © {currentYear} SKILLYUG. All rights reserved.
             </div>
 
             {/* Back to Top */}
