@@ -15,31 +15,31 @@ const Portfolio = () => {
       github: "https://github.com/vinayakpandeycode/GreenArray-Project"
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Business intelligence platform with machine learning insights, predictive analytics, and automated reporting.",
+      title: "AI Automated Evaluation",
+      description: "Instant, Accurate, and Fair Evalution of Answer Sheets Using AI-Powered",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "React", "TensorFlow", "PostgreSQL"],
+      technologies: ["Node.js", "React", "MongoDB", "Express","google gemini api"],
       category: "AI & Data",
-      link: "#",
-      github: "#"
+      link: "https://ai-evaluaite-1.onrender.com/",
+      github: "https://github.com/vinayakpandeycode/AI-Evalution.git"
     },
     {
-      title: "Mobile Fitness App",
-      description: "Cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
+      title: "TrackMyCalorie",
+      description: "Track My Calories helps users log meals, calculates nutrients, sets personalized targets, and gives real-time feedback to achieve fitness goals.",
       image: "/api/placeholder/600/400",
-      technologies: ["React Native", "Firebase", "Node.js", "MongoDB"],
-      category: "Mobile Development",
-      link: "#",
-      github: "#"
+      technologies: ["Flask", "SchemaSQL", "HTML", "CSS"],
+      category: "web development",
+      link: "https://trackmycalorie.onrender.com/login?next=%2F",
+      github: ""
     },
     {
-      title: "Supply Chain Automation",
-      description: "Enterprise solution for automating supply chain processes with real-time tracking and optimization.",
+      title: "Sign language into text",
+      description: "A real-time system that recognizes Indian Sign Language (ISL) gestures using a CNN-LSTM model and translates them into readable text.",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "Django", "AWS", "Docker"],
+      technologies: ["Python", "Tensorflow", "OpenCV", "LSTVM"],
       category: "Automation",
-      link: "#",
-      github: "#"
+      link: "",
+      github: "https://github.com/dubey233445/Ashish_dubey_cse-ai-ml-_E__Sign-Language-to-Text.git"
     }
   ];
 
