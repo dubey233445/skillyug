@@ -47,6 +47,50 @@ const Team = () => {
         twitter: "#",
         github: "#"
       }
+    },
+    {
+      name: "Alex Johnson",
+      role: "Backend Developer",
+      bio: "Specialized in database design and API development. Expert in Python, Django, and microservices architecture.",
+      image: "/api/placeholder/300/300",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      }
+    },
+    {
+      name: "Priya Sharma",
+      role: "Mobile App Developer",
+      bio: "Flutter and React Native expert with 5+ years of experience in cross-platform mobile application development.",
+      image: "/api/placeholder/300/300",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      }
+    },
+    {
+      name: "David Kim",
+      role: "DevOps Engineer",
+      bio: "Cloud infrastructure specialist with expertise in AWS, Docker, and Kubernetes. Ensures scalable and secure deployments.",
+      image: "/api/placeholder/300/300",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      }
+    },
+    {
+      name: "Lisa Wang",
+      role: "Product Manager",
+      bio: "Strategic product leader with expertise in agile methodologies and client relationship management. MBA from top business school.",
+      image: "/api/placeholder/300/300",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      }
     }
   ];
 
