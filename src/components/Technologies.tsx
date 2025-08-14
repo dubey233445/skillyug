@@ -8,7 +8,7 @@ const Technologies = () => {
         { name: "React", color: "text-blue-500" },
         { name: "Next.js", color: "text-gray-800 dark:text-white" },
         { name: "TypeScript", color: "text-blue-600" },
-        { name: "angular", color: "text-cyan-500" },
+        { name: "Kngular", color: "text-cyan-500" },
         { name: "Vue.js", color: "text-green-500" }
       ]
     },
@@ -37,9 +37,9 @@ const Technologies = () => {
       technologies: [
         { name: "MongoDB", color: "text-green-600" },
         { name: "PostgreSQL", color: "text-blue-700" },
-        { name: "Devops", color: "text-orange-500" },
+        { name: "DevOps", color: "text-orange-500" },
         { name: "Firebase", color: "text-yellow-500" },
-        { name: "kubernetes", color: "text-blue-600" }
+        { name: "Kubernetes", color: "text-blue-600" }
       ]
     }
   ];
