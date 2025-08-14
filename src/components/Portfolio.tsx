@@ -93,11 +93,23 @@ const Portfolio = () => {
                   
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button size="sm" variant="secondary" className="opacity-90">
+                    <Button 
+                      size="sm" 
+                      variant="secondary" 
+                      className="opacity-90"
+                      onClick={() => window.open(project.link, '_blank')}
+                      disabled={project.link === '#'}
+                    >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
-                    <Button size="sm" variant="outline" className="opacity-90 bg-white/10 border-white/30 text-white hover:bg-white/20">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="opacity-90 bg-white/10 border-white/30 text-white hover:bg-white/20"
+                      onClick={() => window.open(project.github, '_blank')}
+                      disabled={project.github === '#'}
+                    >
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </Button>
