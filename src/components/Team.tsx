@@ -9,7 +9,7 @@ const Team = () => {
       name: "Vinayak pandey",
       role: "Founder & CEO",
       bio: "Full-stack developer with 3+ years of experience in building scalable web applications and leading development teams.",
-      image: "v.png",
+      image: "v2.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
         twitter: "#",
@@ -31,7 +31,7 @@ const Team = () => {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer",
       bio: "blockchain, Android development And Responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
-      image: "/api/placeholder/300/300",
+      image: "v1.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
         twitter: "#",
@@ -42,7 +42,7 @@ const Team = () => {
       name: "Omkar Pandey",
       role: "Chief Finance Officer",
       bio: "Main public representative; handles pitching to clients communication, finance oversight, and strategic marketing direction.",
-      image: "/api/placeholder/300/300",
+      image: "o1.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
         twitter: "#",
@@ -53,7 +53,7 @@ const Team = () => {
       name: "Yash Pandey",
       role: "Chief Marketing Officer",
       bio: "Supports client communication, manages admin panel updates, and assists with finance reporting.",
-      image: "/api/placeholder/300/300",
+      image: "y1.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
         twitter: "#",
@@ -64,7 +64,7 @@ const Team = () => {
       name: "Aman Kumar",
       role: "Assistant Tech Head",
       bio: "Expert in Python, PowerBi , Excel , C , C++, JavaScript, HTML, CSS, Bootstrap,  React.js,  Tailwind CSS,",
-      image: "/api/placeholder/300/300",
+      image: "a3.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
         twitter: "#",
@@ -75,7 +75,7 @@ const Team = () => {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
       bio: "Social media and Content assistant, Frontend Developer.",
-      image: "/api/placeholder/300/300",
+      image: "a4.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall",
         twitter: "#",
@@ -86,7 +86,7 @@ const Team = () => {
       name: "Amara Ezeokafor",
       role: "Ui Ux Designer",
       bio: "Ux Research , Usability Testing , Figma , and Communication , and Marking" ,
-      image: "/api/placeholder/300/300",
+      image: "a5.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/amara-callista",
         twitter: "#",
