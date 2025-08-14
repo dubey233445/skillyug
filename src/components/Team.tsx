@@ -40,7 +40,7 @@ const Team = () => {
     {
       name: "Omkar Pandey",
       role: "Chief Finance Officer",
-      bio: "Main public representative; handles pitching to clients, front-facing communication, finance oversight, and strategic marketing direction.",
+      bio: "Main public representative; handles pitching to clients communication, finance oversight, and strategic marketing direction.",
       image: "/api/placeholder/300/300",
       social: {
         linkedin: "#",
