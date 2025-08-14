@@ -29,7 +29,7 @@ const Portfolio = () => {
       image: "/api/placeholder/600/400",
       technologies: ["Flask", "SchemaSQL", "HTML", "CSS"],
       category: "web development",
-      link: "https://trackmycalorie.onrender.com/login?next=%2F",
+      link: "https://trackmycalorie.onrender.com",
       github: ""
     },
     {
