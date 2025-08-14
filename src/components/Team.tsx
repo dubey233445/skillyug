@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin, Twitter, Github } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Team = () => {
   const teamMembers = [
@@ -127,15 +128,13 @@ const Team = () => {
             >
               <Card className="card-gradient border-border/50 hover:border-primary/50 transition-all duration-300 hover-glow overflow-hidden">
                 {/* Member Photo */}
-                <div className="relative h-64 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
-                      <span className="text-4xl font-bold text-primary">
-                        {member.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                  </div>
+                <div className="relative h-64 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden flex items-center justify-center">
+                  <Avatar className="w-32 h-32">
+                    <AvatarImage src={member.image} alt={member.name} />
+                    <AvatarFallback className="text-2xl font-bold bg-primary/20 text-primary">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </AvatarFallback>
+                  </Avatar>
                   
                   {/* Social Links Overlay */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
