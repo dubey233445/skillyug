@@ -73,7 +73,7 @@ const Team = () => {
     {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
-      bio: "Oversees MERN stack & frontend development,Android development using Java. and Soical Media & content Assistant",
+      bio: "Oversees MERN stack & frontend development,Android development,java, and Soical Media & content Assistant.",
       image: "/api/placeholder/300/300",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall",
