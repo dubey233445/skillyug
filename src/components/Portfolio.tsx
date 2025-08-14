@@ -36,7 +36,7 @@ const Portfolio = () => {
       title: "Sign language into text",
       description: "A real-time system that recognizes Indian Sign Language (ISL) gestures using a CNN-LSTM model and translates them into readable text.",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "Tensorflow", "OpenCV", "LSTVM"],
+      technologies: ["Python", "Tensorflow", "OpenCV", "LSTM"],
       category: "Automation",
       link: "",
       github: "https://github.com/dubey233445/Ashish_dubey_cse-ai-ml-_E__Sign-Language-to-Text.git"
