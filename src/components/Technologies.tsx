@@ -8,7 +8,7 @@ const Technologies = () => {
         { name: "React", color: "text-blue-500" },
         { name: "Next.js", color: "text-gray-800 dark:text-white" },
         { name: "TypeScript", color: "text-blue-600" },
-        { name: "Kngular", color: "text-cyan-500" },
+        { name: "Angular", color: "text-cyan-500" },
         { name: "Vue.js", color: "text-green-500" }
       ]
     },
