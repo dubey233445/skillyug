@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
+      title: "GreenArray",
+      description: "GreenArray – Your one-stop platform for plants, care guidance, and eco-awareness",
       image: "/api/placeholder/600/400",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["HTML","CSS","JavaScript","Node.js"],
       category: "Web Development",
-      link: "#",
-      github: "#"
+      link: "https://vinayakpandeycode.github.io/GreenArray-Project/",
+      github: "https://github.com/vinayakpandeycode/GreenArray-Project"
     },
     {
       title: "AI-Powered Analytics Dashboard",
