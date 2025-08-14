@@ -18,7 +18,7 @@ const Team = () => {
     {
       name: "Ashish Dubey",
       role: "Technology Head",
-      bio: "Expert in Machine Learning Generative Ai Agentic Ai",
+      bio: "Expert in Python ,java, PowerBi, Deep Learning, NLP,  Machine Learning Generative Ai Agentic Ai",
       image: "/api/placeholder/300/300",
       social: {
         linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
