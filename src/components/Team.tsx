@@ -12,7 +12,7 @@ const Team = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/vinayakpandeycode"
       }
     },
     {
