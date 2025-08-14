@@ -77,7 +77,7 @@ const Team = () => {
       bio: "Social media and Content assistant, Frontend Developer.",
       image: "a4.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/aditi-mall",
+        linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
         twitter: "#",
         github: "https://github.com/Omkar03092006"
       }
