@@ -62,7 +62,7 @@ const Team = () => {
     {
       name: "Aman Kumar",
       role: "Assistant Tech Head",
-      bio: "Expert in Python, PowerBi , Excel , C , C++, JavaScript, HTML, CSS, Bootstrap, React.js, Tailwind CSS,",
+      bio: "Expert in Python, PowerBi , Excel , C , C++, JavaScript, HTML, CSS, Bootstrap,  React.js,  Tailwind CSS,",
       image: "/api/placeholder/300/300",
       social: {
         linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
