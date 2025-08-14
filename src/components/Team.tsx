@@ -71,14 +71,14 @@ const Team = () => {
       }
     },
     {
-      name: "David Kim",
-      role: "DevOps Engineer",
-      bio: "Cloud infrastructure specialist with expertise in AWS, Docker, and Kubernetes. Ensures scalable and secure deployments.",
+      name: "Aditi Mall",
+      role: "Social Media & Content Assistant",
+      bio: "Oversees MERN stack & frontend development,Android development using Java. and Soical Media & content Assistant",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/aditi-mall",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/Omkar03092006"
       }
     },
     {
