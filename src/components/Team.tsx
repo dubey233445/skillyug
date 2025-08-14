@@ -82,12 +82,12 @@ const Team = () => {
       }
     },
     {
-      name: "Lisa Wang",
-      role: "Product Manager",
-      bio: "Strategic product leader with expertise in agile methodologies and client relationship management. MBA from top business school.",
+      name: "Amara Ezeokafor",
+      role: "Ui Ux Designer",
+      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marking" ,
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "http://www.linkedin.com/in/amara-callista",
         twitter: "#",
         github: "#"
       }
