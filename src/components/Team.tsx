@@ -43,20 +43,20 @@ const Team = () => {
       bio: "Main public representative; handles pitching to clients communication, finance oversight, and strategic marketing direction.",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/Omkar03092006"
       }
     },
     {
-      name: "Alex Johnson",
-      role: "Backend Developer",
-      bio: "Specialized in database design and API development. Expert in Python, Django, and microservices architecture.",
+      name: "Yash Pandey",
+      role: "Chief Marketing Officer",
+      bio: "Supports client communication, manages admin panel updates, and assists with finance reporting.",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/yashpandey205"
       }
     },
     {
