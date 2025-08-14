@@ -193,9 +193,9 @@ const Team = () => {
           viewport={{ once: true }}
         >
           {[
-            { label: "Team Members", value: "12+" },
-            { label: "Combined Experience", value: "50+ Years" },
-            { label: "Certifications", value: "25+" }
+            { label: "Team Members", value: "8+" },
+            { label: "Combined Experience", value: "13+ Years" },
+            { label: "Certifications", value: "50+" }
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
