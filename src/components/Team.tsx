@@ -7,7 +7,7 @@ const Team = () => {
     {
       name: "Vinayak pandey",
       role: "Founder & CEO",
-      bio: "Full-stack developer with 8+ years of experience in building scalable web applications and leading development teams.",
+      bio: "Full-stack developer with 3+ years of experience in building scalable web applications and leading development teams.",
       image: "v.png",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
@@ -16,31 +16,31 @@ const Team = () => {
       }
     },
     {
-      name: "Sarah Chen",
-      role: "Lead Developer",
-      bio: "Expert in React, Node.js, and cloud architecture. Passionate about creating efficient and maintainable code.",
+      name: "Ashish Dubey",
+      role: "Technology Head",
+      bio: "Expert in Machine Learning Generative Ai Agentic Ai",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/dubey233445"
       }
     },
     {
-      name: "Mike Rodriguez",
-      role: "AI/ML Engineer",
-      bio: "Specializes in machine learning and AI automation. PhD in Computer Science with focus on deep learning.",
+      name: "Vibhanshu Mishra",
+      role: "Chief Operating Officer",
+      bio: "Responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/VibhanshuMishra11"
       }
     },
     {
-      name: "Emma Davis",
-      role: "UI/UX Designer",
-      bio: "Creative designer with expertise in user experience and interface design. Creates beautiful and functional designs.",
+      name: "Omkar Pandey",
+      role: "Chief Finance Officer",
+      bio: "Chief Finance Officer with expertise in financial strategy, planning, and risk management.",
       image: "/api/placeholder/300/300",
       social: {
         linkedin: "#",
