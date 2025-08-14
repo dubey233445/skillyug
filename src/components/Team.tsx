@@ -60,14 +60,14 @@ const Team = () => {
       }
     },
     {
-      name: "Priya Sharma",
-      role: "Mobile App Developer",
-      bio: "Flutter and React Native expert with 5+ years of experience in cross-platform mobile application development.",
+      name: "Aman Kumar",
+      role: "Assistant Tech Head",
+      bio: "Expert in Python,PowerBi,C, C++, JavaScript, HTML, CSS, Bootstrap, React.js,Tailwind CSS,",
       image: "/api/placeholder/300/300",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/Amankr91100"
       }
     },
     {
