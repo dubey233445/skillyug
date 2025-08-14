@@ -8,7 +8,7 @@ const Technologies = () => {
         { name: "React", color: "text-blue-500" },
         { name: "Next.js", color: "text-gray-800 dark:text-white" },
         { name: "TypeScript", color: "text-blue-600" },
-        { name: "Tailwind CSS", color: "text-cyan-500" },
+        { name: "angular", color: "text-cyan-500" },
         { name: "Vue.js", color: "text-green-500" }
       ]
     },
@@ -18,7 +18,7 @@ const Technologies = () => {
         { name: "Node.js", color: "text-green-600" },
         { name: "Python", color: "text-yellow-500" },
         { name: "Express.js", color: "text-gray-600" },
-        { name: "Django", color: "text-green-700" },
+        { name: "Java", color: "text-green-700" },
         { name: "FastAPI", color: "text-teal-500" }
       ]
     },
@@ -27,7 +27,7 @@ const Technologies = () => {
       technologies: [
         { name: "React Native", color: "text-blue-500" },
         { name: "Flutter", color: "text-blue-400" },
-        { name: "iOS", color: "text-gray-800 dark:text-white" },
+        { name: "Kotlin", color: "text-gray-800 dark:text-white" },
         { name: "Android", color: "text-green-500" },
         { name: "Expo", color: "text-purple-600" }
       ]
@@ -37,9 +37,9 @@ const Technologies = () => {
       technologies: [
         { name: "MongoDB", color: "text-green-600" },
         { name: "PostgreSQL", color: "text-blue-700" },
-        { name: "AWS", color: "text-orange-500" },
+        { name: "Devops", color: "text-orange-500" },
         { name: "Firebase", color: "text-yellow-500" },
-        { name: "Docker", color: "text-blue-600" }
+        { name: "kubernetes", color: "text-blue-600" }
       ]
     }
   ];
