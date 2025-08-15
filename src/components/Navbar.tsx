@@ -59,13 +59,14 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
+              className="text-foreground hover:text-primary hover:bg-accent relative z-50"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
