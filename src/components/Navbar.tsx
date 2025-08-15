@@ -1,12 +1,11 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "./ThemeProvider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -57,35 +56,10 @@ const Navbar = () => {
                 {item.name}
               </motion.button>
             ))}
-            
-            {/* Theme Toggle */}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="ml-4"
-            >
-              {theme === "light" ? (
-                <Moon className="h-4 w-4" />
-              ) : (
-                <Sun className="h-4 w-4" />
-              )}
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-              {theme === "light" ? (
-                <Moon className="h-4 w-4" />
-              ) : (
-                <Sun className="h-4 w-4" />
-              )}
-            </Button>
+          <div className="md:hidden">
             <Button
               variant="outline"
               size="icon"
