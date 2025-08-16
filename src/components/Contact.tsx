@@ -27,7 +27,7 @@ const Contact = () => {
 
   const handleContactForm = () => {
     // Placeholder Google Form URL - replace with actual form
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfEQ2YLNjB5N9exUh16Izbw3D8PrzXMps1JiA8-OTgodks3uA/viewform", "_blank");
+    window.open("https://forms.gle/eaACebw9kxZBfQ7g6", "_blank");
   };
 
   return (
