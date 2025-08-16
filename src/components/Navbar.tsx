@@ -64,7 +64,7 @@ const Navbar = () => {
               variant="outline"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/50"
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
