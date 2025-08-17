@@ -16,19 +16,19 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 71% 4%;
 
-    /* Brand Colors */
-    --primary: 221 83% 53%;
+    /* Enhanced Brand Colors */
+    --primary: 221 83% 53%;        /* Vibrant Blue */
     --primary-foreground: 210 40% 98%;
     --primary-glow: 221 83% 65%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 9% 46%;
+    --secondary: 280 100% 70%;     /* Purple Accent */
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 45 100% 65%;         /* Golden Yellow */
+    --accent-foreground: 220 9% 15%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
-
-    --accent: 220 14% 96%;
-    --accent-foreground: 220 9% 46%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
@@ -81,18 +81,18 @@
     --popover: 224 71% 4%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 221 83% 53%;
+    --primary: 221 83% 53%;        /* Vibrant Blue */
     --primary-foreground: 210 40% 98%;
     --primary-glow: 221 83% 65%;
 
-    --secondary: 215 27% 17%;
+    --secondary: 280 100% 70%;     /* Purple Accent */
     --secondary-foreground: 210 40% 98%;
+
+    --accent: 45 100% 65%;         /* Golden Yellow */
+    --accent-foreground: 220 9% 15%;
 
     --muted: 215 27% 17%;
     --muted-foreground: 217 10% 65%;
-
-    --accent: 215 27% 17%;
-    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;

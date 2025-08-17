@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -26,8 +26,19 @@ const Contact = () => {
   ];
 
   const handleContactForm = () => {
-    // Placeholder Google Form URL - replace with actual form
     window.open("https://forms.gle/eaACebw9kxZBfQ7g6", "_blank");
+  };
+
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/919953157887?text=Hi! I'd like to discuss a project with SKILLYUG.", "_blank");
+  };
+
+  const handleEmail = () => {
+    window.location.href = "mailto:consultantskillyug@gmail.com?subject=Project Inquiry&body=Hi SKILLYUG team, I'd like to discuss a project opportunity.";
+  };
+
+  const handleLinkedIn = () => {
+    window.open("https://linkedin.com/company/skillyug", "_blank");
   };
 
   return (
@@ -114,22 +125,29 @@ const Contact = () => {
               <h4 className="text-xl font-bold text-foreground mb-4">
                 Prefer a Quick Chat?
               </h4>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 <Button 
-                  variant="outline" 
-                  className="flex items-center space-x-2"
-                  onClick={() => window.open("mailto:consultantskillyug@gmail.com")}
+                  className="flex items-center space-x-2 bg-green-600 hover:bg-green-700"
+                  onClick={handleWhatsApp}
                 >
-                  <Mail className="h-4 w-4" />
-                  <span>Send Email</span>
+                  <MessageCircle className="h-4 w-4" />
+                  <span>WhatsApp</span>
                 </Button>
                 <Button 
                   variant="outline" 
                   className="flex items-center space-x-2"
-                  onClick={() => window.open("tel:+919953157887")}
+                  onClick={handleEmail}
                 >
-                  <Phone className="h-4 w-4" />
-                  <span>Call Now</span>
+                  <Mail className="h-4 w-4" />
+                  <span>Email Us</span>
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white border-blue-600"
+                  onClick={handleLinkedIn}
+                >
+                  <Linkedin className="h-4 w-4" />
+                  <span>LinkedIn</span>
                 </Button>
               </div>
             </motion.div>
@@ -177,14 +195,23 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* CTA Button */}
+                {/* CTA Buttons */}
                 <Button
                   onClick={handleContactForm}
-                  className="w-full bg-primary hover:bg-primary/90 text-white py-3 text-lg font-semibold rounded-full hover-glow transition-all duration-300"
+                  className="w-full bg-primary hover:bg-primary/90 text-white py-3 text-lg font-semibold rounded-full hover-glow transition-all duration-300 mb-3"
                   size="lg"
                 >
                   <Send className="mr-2 h-5 w-5" />
-                  Fill Project Form
+                  Let's Discuss Your Project Idea
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => window.open("https://calendly.com/skillyug/demo", "_blank")}
+                  className="w-full py-3 text-lg font-semibold rounded-full transition-all duration-300"
+                  size="lg"
+                >
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Get a Free Prototype Demo
                 </Button>
 
                 <p className="text-center text-sm text-muted-foreground">
@@ -210,14 +237,25 @@ const Contact = () => {
             Every business is unique, and so are our solutions. Let's discuss your specific 
             requirements and create something amazing together.
           </p>
-          <Button
-            onClick={handleContactForm}
-            variant="outline"
-            size="lg"
-            className="font-semibold"
-          >
-            Schedule a Free Consultation
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              onClick={() => window.open("https://calendly.com/skillyug", "_blank")}
+              size="lg"
+              className="font-semibold group"
+            >
+              Schedule a Free Consultation
+              <Calendar className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button
+              variant="outline"
+              onClick={handleWhatsApp}
+              size="lg"
+              className="font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600 group"
+            >
+              Quick WhatsApp Chat
+              <MessageCircle className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>

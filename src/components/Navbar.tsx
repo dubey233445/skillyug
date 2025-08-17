@@ -2,23 +2,33 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Logo from "./Logo";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "About Us", href: "#about" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Home", href: "#home", type: "scroll" },
+    { name: "Services", href: "#services", type: "scroll" },
+    { name: "Technologies", href: "#technologies", type: "scroll" },
+    { name: "Portfolio", href: "#portfolio", type: "scroll" },
+    { name: "About", href: "#about", type: "scroll" },
+    { name: "Team", href: "#team", type: "scroll" },
+    { name: "Blog", href: "/blog", type: "route" },
+    { name: "Contact", href: "#contact", type: "scroll" },
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNavigation = (item: typeof navItems[0]) => {
+    if (item.type === "scroll") {
+      const element = document.querySelector(item.href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (item.type === "route") {
+      navigate(item.href);
     }
     setIsOpen(false);
   };
@@ -33,14 +43,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <motion.div
-            className="flex items-center"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="text-2xl font-bold accent-gradient bg-clip-text text-transparent">
-              SKILLYUG
-            </span>
+          <motion.div onClick={() => navigate("/")}>
+            <Logo size="md" />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -48,7 +52,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <motion.button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item)}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
@@ -84,7 +88,7 @@ const Navbar = () => {
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item)}
                   className="block w-full text-left px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
                   whileTap={{ scale: 0.95 }}
                 >
