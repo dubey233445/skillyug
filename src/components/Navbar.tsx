@@ -25,20 +25,20 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border"
+      className="fixed top-0 left-0 right-0 z-[9999] bg-background/95 backdrop-blur-md border-b border-border"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div
             className="flex items-center flex-shrink-0"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-xl sm:text-2xl font-bold accent-gradient bg-clip-text text-transparent">
+            <span className="text-lg sm:text-xl md:text-2xl font-bold accent-gradient bg-clip-text text-transparent">
               SKILLYUG
             </span>
           </motion.div>
@@ -62,11 +62,11 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <Button
               variant="outline"
-              size="icon"
+              size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/90 h-9 w-9 sm:h-10 sm:w-10"
+              className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/90 h-10 w-10 p-0 flex items-center justify-center"
             >
-              {isOpen ? <X className="h-4 w-4 sm:h-5 sm:w-5" /> : <Menu className="h-4 w-4 sm:h-5 sm:w-5" />}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
