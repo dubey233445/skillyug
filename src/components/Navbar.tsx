@@ -76,10 +76,10 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden fixed top-16 left-0 right-0 bg-background border-t border-border shadow-lg overflow-hidden"
-            initial={{ opacity: 0, y: -20, height: 0 }}
-            animate={{ opacity: 1, y: 0, height: "auto" }}
-            exit={{ opacity: 0, y: -20, height: 0 }}
+            className="md:hidden fixed top-16 right-2 w-64 bg-background border border-border shadow-lg rounded-lg overflow-hidden"
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 40 }}
             transition={{ duration: 0.35, ease: "easeInOut" }}
           >
             <div className="px-4 py-4 space-y-2">
