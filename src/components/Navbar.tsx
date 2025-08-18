@@ -76,13 +76,13 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden absolute left-0 right-0 top-16 bg-background border-t border-border shadow-lg"
+            className="md:hidden absolute left-0 right-0 top-16 bg-background border-t border-border shadow-lg overflow-hidden"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
           >
-            <div className="px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
