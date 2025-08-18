@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <motion.nav
       className="fixed top-0 left-0 right-0 z-[9999] bg-background/95 backdrop-blur-md border-b border-border"
-      initial={{ y: -100 }}
+      initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
@@ -76,10 +76,10 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden absolute left-0 right-0 top-16 bg-background border-t border-border shadow-lg overflow-hidden"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden fixed top-16 left-0 right-0 bg-background border-t border-border shadow-lg overflow-hidden"
+            initial={{ opacity: 0, y: -20, height: 0 }}
+            animate={{ opacity: 1, y: 0, height: "auto" }}
+            exit={{ opacity: 0, y: -20, height: 0 }}
             transition={{ duration: 0.35, ease: "easeInOut" }}
           >
             <div className="px-4 py-4 space-y-2">
