@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -70,22 +69,24 @@ const Navbar = () => {
             </Button>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Navigation */}
+      {/* Mobile Navigation */}
+      <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="md:hidden absolute left-0 right-0 top-full bg-background border-t border-border shadow-lg"
+            className="md:hidden absolute left-0 right-0 top-16 bg-background border-t border-border shadow-lg"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="px-3 py-3 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div className="px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-3 text-sm sm:text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
                   whileTap={{ scale: 0.98 }}
                 >
                   {item.name}
@@ -94,7 +95,7 @@ const Navbar = () => {
             </div>
           </motion.div>
         )}
-      </div>
+      </AnimatePresence>
     </motion.nav>
   );
 };
