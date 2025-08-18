@@ -25,20 +25,20 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
           <motion.div
-            className="flex items-center"
+            className="flex items-center flex-shrink-0"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-2xl font-bold accent-gradient bg-clip-text text-transparent">
+            <span className="text-xl sm:text-2xl font-bold accent-gradient bg-clip-text text-transparent">
               SKILLYUG
             </span>
           </motion.div>
@@ -64,9 +64,9 @@ const Navbar = () => {
               variant="outline"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/50"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/90 h-9 w-9 sm:h-10 sm:w-10"
             >
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isOpen ? <X className="h-4 w-4 sm:h-5 sm:w-5" /> : <Menu className="h-4 w-4 sm:h-5 sm:w-5" />}
             </Button>
           </div>
         </div>
@@ -74,19 +74,19 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <motion.div
-            className="md:hidden"
+            className="md:hidden absolute left-0 right-0 top-full bg-background border-t border-border shadow-lg"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
+            <div className="px-3 py-3 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
-                  whileTap={{ scale: 0.95 }}
+                  className="block w-full text-left px-3 py-3 text-sm sm:text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
+                  whileTap={{ scale: 0.98 }}
                 >
                   {item.name}
                 </motion.button>
