@@ -85,7 +85,7 @@ const Team = () => {
     {
       name: "Amara Ezeokafor",
       role: "Ui Ux Designer",
-      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marketing" ,
+      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marketing." ,
       image: "a5.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/amara-callista",
