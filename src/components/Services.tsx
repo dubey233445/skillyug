@@ -7,25 +7,25 @@ const Services = () => {
     {
       icon: Globe,
       title: "Web Development",
-      description: "Modern, responsive websites and web applications built with cutting-edge technologies like React, Node.js, and Next.js.",
+      description: "Modern, Responsive websites and Web Applications built with cutting-edge technologies like React, Node.js, and Next.js.",
       features: ["Responsive Design", "Performance Optimization", "SEO Friendly", "Modern Frameworks"]
     },
     {
       icon: Smartphone,
       title: "Mobile Development",
-      description: "Cross-platform mobile apps for iOS and Android using React Native and Flutter for seamless user experiences.",
+      description: "Cross-platform mobile apps for Android and ios using React Native and Flutter for seamless user experiences.",
       features: ["Cross Platform", "Native Performance", "App Store Ready", "Push Notifications"]
     },
     {
       icon: Bot,
       title: "AI Automation",
-      description: "Intelligent automation solutions powered by machine learning and AI to streamline your business processes.",
+      description: "Intelligent Automation solutions powered by Machine Learning and AI to streamline your Business processes.",
       features: ["Process Automation", "Machine Learning", "Data Analysis", "Smart Workflows"]
     },
     {
       icon: Zap,
       title: "Custom Solutions",
-      description: "Tailored software solutions designed specifically for your unique business needs and requirements.",
+      description: "Tailored software solutions designed specifically for your unique Business needs and requirements.",
       features: ["Custom Architecture", "Scalable Solutions", "Integration Ready", "24/7 Support"]
     }
   ];
