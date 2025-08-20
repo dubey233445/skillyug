@@ -45,7 +45,7 @@ const Services = () => {
             Our <span className="accent-gradient bg-clip-text text-transparent">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We offer comprehensive software solutions to help your business thrive in the digital age
+            We Offer Comprehensive Software Solutions to help your Business thrive in the Digital age
           </p>
         </motion.div>
 
