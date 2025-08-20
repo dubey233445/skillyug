@@ -63,7 +63,7 @@ const Team = () => {
     {
       name: "Aman Kumar",
       role: "Assistant Tech Head",
-      bio: "Expert in Python, PowerBi , Excel , C , C++, JavaScript, HTML, CSS, Bootstrap,  React.js,  Tailwind CSS,",
+      bio: "Expert in Python, PowerBi , Excel , C , C++, JavaScript, HTML, CSS, Bootstrap,  React.js,  Tailwind CSS.",
       image: "a3.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
@@ -85,7 +85,7 @@ const Team = () => {
     {
       name: "Amara Ezeokafor",
       role: "Ui Ux Designer",
-      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marking" ,
+      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marketing" ,
       image: "a5.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/amara-callista",
