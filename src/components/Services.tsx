@@ -13,7 +13,7 @@ const Services = () => {
     {
       icon: Smartphone,
       title: "Mobile Development",
-      description: "Cross-platform mobile apps for Android and ios using React Native and Flutter for seamless user experiences.",
+      description: "Cross-platform mobile apps for Android and ios using React Native and Flutter for seamless User Experiences.",
       features: ["Cross Platform", "Native Performance", "App Store Ready", "Push Notifications"]
     },
     {
@@ -25,7 +25,7 @@ const Services = () => {
     {
       icon: Zap,
       title: "Custom Solutions",
-      description: "Tailored software solutions designed specifically for your unique Business needs and requirements.",
+      description: "Tailored software solutions designed specifically for your unique Business needs and Requirements.",
       features: ["Custom Architecture", "Scalable Solutions", "Integration Ready", "24/7 Support"]
     }
   ];
