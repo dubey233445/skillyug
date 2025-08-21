@@ -18,22 +18,22 @@ const Portfolio = () => {
       title: "AI Automated Evaluation",
       description: "Instant, Accurate, and Fair Evalution of Answer Sheets Using AI-Powered",
       image: "/api/placeholder/600/400",
-      technologies: ["Node.js", "React", "MongoDB", "Express","google gemini api"],
+      technologies: ["Node.js", "React", "MongoDB", "Express","Google Gemini Api"],
       category: "AI & Data",
       link: "https://ai-evaluaite-1.onrender.com/",
       github: "https://github.com/vinayakpandeycode/AI-Evalution.git"
     },
     {
-      title: "TrackMyCalorie",
+      title: "Track My Calorie",
       description: "Track My Calories helps users log meals, calculates nutrients, sets personalized targets, and gives real-time feedback to achieve fitness goals.",
       image: "/api/placeholder/600/400",
-      technologies: ["Flask", "SchemaSQL", "HTML", "CSS"],
-      category: "web development",
+      technologies: ["HTML", "CSS", "Flask", "SchemaSQL"],
+      category: "Web Development",
       link: "https://trackmycalorie.onrender.com",
       github: ""
     },
     {
-      title: "Sign language into text",
+      title: "Sign Language into text",
       description: "A real-time system that recognizes Indian Sign Language (ISL) gestures using a CNN-LSTM model and translates them into readable text.",
       image: "/api/placeholder/600/400",
       technologies: ["Python", "Tensorflow", "OpenCV", "LSTM"],
