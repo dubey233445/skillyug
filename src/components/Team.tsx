@@ -30,7 +30,7 @@ const Team = () => {
     {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer",
-      bio: "blockchain, Android development And Responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
+      bio: "Blockchain, Android development And Responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
       image: "v1.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
