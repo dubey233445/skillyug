@@ -101,8 +101,8 @@ const Team = () => {
         linkedin: "http://www.linkedin.com/in/amara-callista",
         twitter: "#",
         github: "#"
+        
       }
-    }
   ];
 
   return (
