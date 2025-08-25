@@ -97,7 +97,7 @@ const Team = () => {
     {
       name: "Akansha Shukla",
       role: "Assistant Marketing Manager",
-      bio: "Specializes in data analysis, predictive modeling, and AI-driven insights for decision-making.",
+      bio: "Assistant Marketing Manager.",
       image: "ake.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/akanksha-sunil-shukla-7720072a7/",
