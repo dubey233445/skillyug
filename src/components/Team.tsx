@@ -30,7 +30,7 @@ const Team = () => {
     {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer",
-      bio: "Focused on Blockchain & Android Development, responsible for daily operations, process optimization, and driving strategic goals.",
+      bio: "Focused on Blockchain & Android Development, responsible for daily operations, process optimization and driving strategic goals.",
       image: "ty.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
@@ -41,7 +41,7 @@ const Team = () => {
     {
       name: "Omkar Pandey",
       role: "Chief Finance Officer",
-      bio: "CFO at Skillyug – driving growth through smart financial planning and seamless client-tech coordination.",
+      bio: "Driving growth through smart financial planning and seamless client-tech Coordination.",
       image: "om.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
@@ -52,7 +52,7 @@ const Team = () => {
     {
       name: "Yash Pandey",
       role: "Chief Marketing Officer",
-      bio: "CMO at Skillyug, driving brand growth with creativity, strategy, and innovation..",
+      bio: "Driving brand growth with creativity, strategy, and innovation..",
       image: "yt.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
@@ -63,7 +63,7 @@ const Team = () => {
     {
       name: "Vaibhav Kumar",
       role: "Chief Technology Officer",
-      bio: "CTO at Skillyug, leading with innovation to build scalable and impactful tech solutions.",
+      bio: "Leading with innovation to build scalable and impactful tech solutions.",
       image: "vd.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vaibhavkumar2611/",
@@ -85,7 +85,7 @@ const Team = () => {
     {
       name: "Amara Ezeokafor",
       role: "UI/UX Designer",
-      bio: "UX Research, Usability Testing, Figma, and Communication, and Marketing.",
+      bio: "UX Research, Usability Testing, Figma, and Communication and Marketing.",
       image: "a5.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/amara-callista",
@@ -97,7 +97,7 @@ const Team = () => {
     {
       name: "Akansha Shukla",
       role: "Assistant Marketing Manager",
-      bio: "Assistant Marketing Manager.",
+      bio: "Assistant Marketing Officer, excels in Research and strategic Marketing..",
       image: "ake.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/akanksha-sunil-shukla-7720072a7/",
