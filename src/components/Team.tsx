@@ -75,7 +75,7 @@ const Team = () => {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
       bio: "Social Media Assistant & Content Manager.",
-      image: "a4.jpg",
+      image: "ad.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
         twitter: "#",
