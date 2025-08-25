@@ -48,7 +48,7 @@ const About = () => {
             About <span className="accent-gradient bg-clip-text text-transparent">SKILLYUG</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We are a passionate team of developers, designers, and innovators dedicated to creating exceptional software solutions
+            We are a Passionate team of Developers, Designers, and innovators dedicated to creating exceptional Software Solutions
           </p>
         </motion.div>
 
