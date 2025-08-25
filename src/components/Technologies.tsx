@@ -17,7 +17,7 @@ const Technologies = () => {
       technologies: [
         { name: "Node.js", color: "text-green-600" },
         { name: "Python", color: "text-yellow-500" },
-        { name: "Express.js", color: "text-gray-600" },
+        { name: "Express.js", color: "text-purple-600" },
         { name: "Java", color: "text-green-700" },
         { name: "FastAPI", color: "text-teal-500" }
       ]
