@@ -134,7 +134,7 @@ const Team = () => {
             Meet Our <span className="accent-gradient bg-clip-text text-transparent">Team</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our talented team of developers, designers, and innovators working together to bring your vision to life
+            Our Talented Team of developers, designers and innovators working together to bring your vision to life
           </p>
         </motion.div>
 
