@@ -9,7 +9,7 @@ const Team = () => {
       name: "Vinayak Pandey",
       role: "Founder & CEO",
       bio: "Full-stack developer with 3+ years of experience in building scalable web applications and leading development teams.",
-      image: "v2.jpg",
+      image: "ceo.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
         twitter: "#",
@@ -20,7 +20,7 @@ const Team = () => {
       name: "Ashish Dubey",
       role: "Technology Head",
       bio: "Expert in Python, Java, PowerBi, Deep Learning, NLP, SQL, EDA, Spark, Hadoop, Machine Learning, Generative AI, Agentic AI.",
-      image: "a1.jpg",
+      image: "ast.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
         twitter: "#",
@@ -31,7 +31,7 @@ const Team = () => {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer",
       bio: "Blockchain, Android development and responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
-      image: "v1.jpg",
+      image: "tr.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
         twitter: "#",
@@ -42,7 +42,7 @@ const Team = () => {
       name: "Omkar Pandey",
       role: "Chief Finance Officer",
       bio: "Main public representative; handles pitching to clients communication, finance oversight, and strategic marketing direction.",
-      image: "o1.jpg",
+      image: "om.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
         twitter: "#",
@@ -53,7 +53,7 @@ const Team = () => {
       name: "Yash Pandey",
       role: "Chief Marketing Officer",
       bio: "Supports client communication, manages admin panel updates, and assists with finance reporting.",
-      image: "y1.jpg",
+      image: "yt.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
         twitter: "#",
@@ -98,7 +98,7 @@ const Team = () => {
       name: "Rahul Verma",
       role: "Data Scientist",
       bio: "Specializes in data analysis, predictive modeling, and AI-driven insights for decision-making.",
-      image: "r1.jpg",
+      image: "ake.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/rahul-verma-ds/",
         twitter: "#",
@@ -110,7 +110,7 @@ const Team = () => {
       name: "Sneha Gupta",
       role: "Product Manager",
       bio: "Leads product vision, strategy, and development to deliver customer-focused and impactful solutions.",
-      image: "s1.jpg",
+      image: "hrt.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/sneha-gupta-pm/",
         twitter: "#",
