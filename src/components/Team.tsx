@@ -30,7 +30,7 @@ const Team = () => {
     {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer",
-      bio: "Focused on Blockchain & Android Development, optimizing processes and driving strategic goals.",
+      bio: "Driving Blockchain & Android Development and process optimization and strategic focus",
       image: "ty.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
