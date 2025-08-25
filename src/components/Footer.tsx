@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import { Linkedin, Twitter, Mail, ArrowUp, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,9 +26,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: "GitHub", icon: Github, href: "#" },
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true" },
     { name: "Twitter", icon: Twitter, href: "https://x.com/skillyug063" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/skillyug/" },
     { name: "Email", icon: Mail, href: "mailto:consultantskillyug@gmail.com" }
   ];
 
