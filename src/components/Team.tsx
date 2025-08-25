@@ -18,7 +18,7 @@ const Team = () => {
     },
     {
       name: "Ashish Dubey",
-      role: "Chief Developer Officer (CDO)",
+      role: "Chief Developer Officer(CDO)",
       bio: " Chief Development Officer, leading Technology-driven growth and innovative Product Development.",
       image: "tr.jpg",
       social: {
