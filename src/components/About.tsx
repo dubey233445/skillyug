@@ -63,7 +63,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold text-foreground">
-              Empowering Businesses Through Smart Code
+              Streamlining Processes with AI-driven Technology
             </h3>
             
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
