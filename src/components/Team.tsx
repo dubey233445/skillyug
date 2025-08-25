@@ -6,7 +6,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Vinayak pandey",
+      name: "Vinayak Pandey",
       role: "Founder & CEO",
       bio: "Full-stack developer with 3+ years of experience in building scalable web applications and leading development teams.",
       image: "v2.jpg",
@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "Ashish Dubey",
       role: "Technology Head",
-      bio: "Expert in Python ,java, PowerBi, Deep Learning, NLP, SQL, EDA, Spark, Hadoop, Machine Learning Generative Ai Agentic Ai",
+      bio: "Expert in Python, Java, PowerBi, Deep Learning, NLP, SQL, EDA, Spark, Hadoop, Machine Learning, Generative AI, Agentic AI.",
       image: "a1.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
@@ -30,7 +30,7 @@ const Team = () => {
     {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer",
-      bio: "Blockchain, Android development And Responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
+      bio: "Blockchain, Android development and responsible for overseeing daily operations, optimizing processes, and ensuring strategic goals are met across all departments.",
       image: "v1.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
@@ -61,9 +61,9 @@ const Team = () => {
       }
     },
     {
-      name: "Vaibhav kumar",
+      name: "Vaibhav Kumar",
       role: "Chief Technology Officer",
-      bio: "CTO at Skillyug, leading with innovation to build scalable and impactful tech solutions..",
+      bio: "CTO at Skillyug, leading with innovation to build scalable and impactful tech solutions.",
       image: "a3.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
@@ -75,7 +75,7 @@ const Team = () => {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
       bio: "Social Media Assistant & Content Manager.",
-      image: "ad.jpg",
+      image: "a4.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
         twitter: "#",
@@ -84,13 +84,37 @@ const Team = () => {
     },
     {
       name: "Amara Ezeokafor",
-      role: "Ui Ux Designer",
-      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marketing.",
+      role: "UI/UX Designer",
+      bio: "UX Research, Usability Testing, Figma, and Communication, and Marketing.",
       image: "a5.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/amara-callista",
         twitter: "#",
         github: "#"
+      }
+    },
+    // ✅ New Card 1
+    {
+      name: "Rahul Verma",
+      role: "Data Scientist",
+      bio: "Specializes in data analysis, predictive modeling, and AI-driven insights for decision-making.",
+      image: "r1.jpg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/rahul-verma-ds/",
+        twitter: "#",
+        github: "https://github.com/rahulverma"
+      }
+    },
+    // ✅ New Card 2
+    {
+      name: "Sneha Gupta",
+      role: "Product Manager",
+      bio: "Leads product vision, strategy, and development to deliver customer-focused and impactful solutions.",
+      image: "s1.jpg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/sneha-gupta-pm/",
+        twitter: "#",
+        github: "https://github.com/snehagupta"
       }
     }
   ];
