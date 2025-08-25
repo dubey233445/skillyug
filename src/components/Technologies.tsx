@@ -59,7 +59,7 @@ const Technologies = () => {
             Our <span className="accent-gradient bg-clip-text text-transparent">Tech Stack</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We use cutting-edge technologies to build robust, scalable, and modern solutions
+            We use cutting-edge Technologies to build robust, scalable, and modern solutions
           </p>
         </motion.div>
 
