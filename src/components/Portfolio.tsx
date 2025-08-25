@@ -58,7 +58,7 @@ const Portfolio = () => {
             Our <span className="accent-gradient bg-clip-text text-transparent">Portfolio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover some of our recent projects and see how we've helped businesses transform digitally
+            Discover some of our recent projects and see how we've helped businesses Transform Digitally
           </p>
         </motion.div>
 
@@ -155,7 +155,7 @@ const Portfolio = () => {
           viewport={{ once: true }}
         >
           <p className="text-lg text-muted-foreground mb-6">
-            Interested in working with us on your next project?
+            Interested in working with us on your next Project?
           </p>
           <motion.button
             onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
