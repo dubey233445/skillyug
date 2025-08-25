@@ -28,7 +28,7 @@ const Footer = () => {
   const socialLinks = [
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true" },
     { name: "Twitter", icon: Twitter, href: "https://x.com/skillyug063" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/skillyug/" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/skillyug?igsh=ZnFwbGM4MW1tY29m" },
     { name: "Email", icon: Mail, href: "mailto:consultantskillyug@gmail.com" }
   ];
 
