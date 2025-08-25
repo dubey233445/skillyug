@@ -61,9 +61,9 @@ const Team = () => {
       }
     },
     {
-      name: "Aman Kumar",
-      role: "Assistant Tech Head",
-      bio: "Expert in Python, PowerBi , Excel , C , C++, JavaScript, HTML, CSS, Bootstrap,  React.js,  Tailwind CSS.",
+      name: "Vaibhav kumar",
+      role: "Chief Technology Officer",
+      bio: "CTO at Skillyug, leading with innovation to build scalable and impactful tech solutions..",
       image: "a3.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
@@ -74,7 +74,7 @@ const Team = () => {
     {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
-      bio: "Social media and Content assistant, Frontend Developer.",
+      bio: "Social Media Assistant & Content Manager.",
       image: "a4.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
@@ -83,6 +83,16 @@ const Team = () => {
       }
     },
     {
+      name: "Amara Ezeokafor",
+      role: "Ui Ux Designer",
+      bio: "Ux Research , Usability Testing , Figma , and Communication , and Marketing." ,
+      image: "a5.jpg",
+      social: {
+        linkedin: "http://www.linkedin.com/in/amara-callista",
+        twitter: "#",
+        github: "#"
+      },
+          {
       name: "Amara Ezeokafor",
       role: "Ui Ux Designer",
       bio: "Ux Research , Usability Testing , Figma , and Communication , and Marketing." ,
