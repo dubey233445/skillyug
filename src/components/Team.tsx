@@ -8,7 +8,7 @@ const Team = () => {
     {
       name: "Vinayak Pandey",
       role: "Founder & CEO",
-      bio: "Vinayak Pandey-Founder & CEO at Skillyug | Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
+      bio: "Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
       image: "ceo.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
