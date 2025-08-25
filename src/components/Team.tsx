@@ -8,7 +8,7 @@ const Team = () => {
     {
       name: "Vinayak Pandey",
       role: "Founder & CEO",
-      bio: "Full-stack developer with 3+ years of experience in building scalable web applications and leading development teams.",
+      bio: "Vinayak Pandey-Founder & CEO at Skillyug | Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
       image: "ceo.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "Ashish Dubey",
       role: "Technology Head",
-      bio: "Expert in Python, Java, PowerBi, Deep Learning, NLP, SQL, EDA, Spark, Hadoop, Machine Learning, Generative AI, Agentic AI.",
+      bio: " Chief Development Officer, leading Technology-driven growth and innovative Product Development.",
       image: "tr.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
@@ -41,7 +41,7 @@ const Team = () => {
     {
       name: "Omkar Pandey",
       role: "Chief Finance Officer",
-      bio: "Main public representative; handles pitching to clients communication, finance oversight, and strategic marketing direction.",
+      bio: "CFO at Skillyug – driving growth through smart financial planning and seamless client-tech coordination.",
       image: "om.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
@@ -52,7 +52,7 @@ const Team = () => {
     {
       name: "Yash Pandey",
       role: "Chief Marketing Officer",
-      bio: "Supports client communication, manages admin panel updates, and assists with finance reporting.",
+      bio: "CMO at Skillyug, driving brand growth with creativity, strategy, and innovation..",
       image: "yt.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
@@ -66,9 +66,9 @@ const Team = () => {
       bio: "CTO at Skillyug, leading with innovation to build scalable and impactful tech solutions.",
       image: "vd.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
+        linkedin: "https://www.linkedin.com/in/vaibhavkumar2611/",
         twitter: "#",
-        github: "https://github.com/Amankr91100"
+        github: "https://github.com/Vaibhav-Rep"
       }
     },
     {
@@ -95,26 +95,26 @@ const Team = () => {
     },
     // ✅ New Card 1
     {
-      name: "Rahul Verma",
-      role: "Data Scientist",
+      name: "Akansha Shukla",
+      role: "Assistant Marketing Manager",
       bio: "Specializes in data analysis, predictive modeling, and AI-driven insights for decision-making.",
       image: "ake.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/rahul-verma-ds/",
+        linkedin: "https://www.linkedin.com/in/akanksha-sunil-shukla-7720072a7/",
         twitter: "#",
-        github: "https://github.com/rahulverma"
+        github: "https://github.com/Akankshashukla7110"
       }
     },
     // ✅ New Card 2
     {
-      name: "Sneha Gupta",
-      role: "Product Manager",
-      bio: "Leads product vision, strategy, and development to deliver customer-focused and impactful solutions.",
+      name: "Hariom Tripathi",
+      role: "Social Media Manager & Graphics Designer",
+      bio: "Design Head, Social Media Manager.",
       image: "hrt.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/sneha-gupta-pm/",
+        linkedin: "https://www.linkedin.com/in/ihariomtripathi/",
         twitter: "#",
-        github: "https://github.com/snehagupta"
+        github: "https://github.com/HariOmTripathi23"
       }
     }
   ];
