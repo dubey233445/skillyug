@@ -20,7 +20,7 @@ const Team = () => {
       name: "Ashish Dubey",
       role: "Technology Head",
       bio: "Expert in Python, Java, PowerBi, Deep Learning, NLP, SQL, EDA, Spark, Hadoop, Machine Learning, Generative AI, Agentic AI.",
-      image: "ast.jpg",
+      image: "tr.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
         twitter: "#",
@@ -64,7 +64,7 @@ const Team = () => {
       name: "Vaibhav Kumar",
       role: "Chief Technology Officer",
       bio: "CTO at Skillyug, leading with innovation to build scalable and impactful tech solutions.",
-      image: "a3.jpg",
+      image: "vd.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aman-kumar-4b0738318",
         twitter: "#",
