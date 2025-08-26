@@ -56,10 +56,13 @@ const Technologies = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Our <span className="accent-gradient bg-clip-text text-transparent">Tech Stack</span>
+            Our{" "}
+            <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+              Tech Stack
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We use cutting-edge Technologies to build robust, scalable, and modern solutions
+            We use cutting-edge technologies to build robust, scalable, and modern solutions
           </p>
         </motion.div>
 
@@ -74,18 +77,21 @@ const Technologies = () => {
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-bold text-foreground text-center">
-                {category.name}
-              </h3>
+              {/* Category Title */}
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-foreground">{category.name}</h3>
+                <div className="w-16 h-1 mx-auto mt-2 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
+              </div>
               
+              {/* Tech Items */}
               <div className="space-y-3">
                 {category.technologies.map((tech, techIndex) => (
                   <motion.div
                     key={tech.name}
-                    className="bg-background/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 text-center hover:border-primary/50 transition-all duration-300"
+                    className="bg-background/40 backdrop-blur-md border border-border/50 rounded-xl p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300"
                     whileHover={{ 
-                      scale: 1.05,
-                      boxShadow: "var(--shadow-glow)"
+                      scale: 1.06,
+                      boxShadow: "0px 0px 20px rgba(99,102,241,0.3)" // subtle glow
                     }}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
