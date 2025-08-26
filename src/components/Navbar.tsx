@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image"; // ✅ for logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,13 +34,18 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div
-            className="flex items-center flex-shrink-0"
+            className="flex items-center flex-shrink-0 cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => scrollToSection("#home")}
           >
-            <span className="text-lg sm:text-xl md:text-2xl font-bold accent-gradient bg-clip-text text-transparent">
-              SKILLYUG
-            </span>
+            <Image
+              src="/logo.png" // ✅ place your logo inside /public/logo.png
+              alt="Skillyug Logo"
+              width={160}
+              height={40}
+              priority
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
