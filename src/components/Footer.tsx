@@ -26,10 +26,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true" },
-    { name: "Twitter", icon: Twitter, href: "https://x.com/skillyug063" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/skillyug?igsh=ZnFwbGM4MW1tY29m" },
-    { name: "Email", icon: Mail, href: "mailto:consultantskillyug@gmail.com" }
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true", color: "hover:bg-blue-600" },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/skillyug063", color: "hover:bg-sky-500" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/skillyug?igsh=ZnFwbGM4MW1tY29m", color: "hover:bg-pink-500" },
+    { name: "Email", icon: Mail, href: "mailto:consultantskillyug@gmail.com", color: "hover:bg-red-500" }
   ];
 
   const scrollToTop = () => {
@@ -46,9 +46,11 @@ const Footer = () => {
   return (
     <footer className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+            
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <motion.div
@@ -57,12 +59,15 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-3xl font-bold accent-gradient bg-clip-text text-transparent mb-4">
+                <h3 className="text-3xl font-bold accent-gradient bg-clip-text text-transparent mb-2">
                   SKILLYUG
                 </h3>
-                <p className="text-muted-foreground leading-relaxed max-w-md">
-                  Empowering businesses through smart code. We create custom software solutions 
-                  that drive growth, efficiency, and digital transformation.
+                <p className="text-sm text-primary font-medium">
+                  Empowering businesses through smart code 🚀
+                </p>
+                <p className="text-muted-foreground leading-relaxed max-w-md mt-3">
+                  We build custom software solutions that drive growth,
+                  efficiency, and digital transformation for modern businesses.
                 </p>
               </motion.div>
 
@@ -78,7 +83,7 @@ const Footer = () => {
                   <strong className="text-foreground">Email:</strong> consultantskillyug@gmail.com
                 </p>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Phone:</strong>91+ 9450935939
+                  <strong className="text-foreground">Phone:</strong> +91 9450935939
                 </p>
                 <p className="text-muted-foreground">
                   <strong className="text-foreground">Location:</strong> Noida, UP
@@ -97,7 +102,7 @@ const Footer = () => {
                   <motion.a
                     key={social.name}
                     href={social.href}
-                    className="p-2 bg-muted hover:bg-primary/10 rounded-lg text-muted-foreground hover:text-primary transition-all duration-300"
+                    className={`p-2 bg-muted rounded-lg text-muted-foreground transition-all duration-300 ${social.color} hover:text-white`}
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     target={social.href.startsWith('mailto') ? undefined : "_blank"}
@@ -135,6 +140,30 @@ const Footer = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Newsletter */}
+          <motion.div
+            className="mt-12 lg:col-span-5 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <h4 className="text-lg font-semibold text-foreground">Stay Updated</h4>
+            <p className="text-sm text-muted-foreground mt-1">
+              Subscribe to get the latest news and updates.
+            </p>
+            <div className="mt-4 flex justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-4 py-2 rounded-l-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary w-64 text-sm"
+              />
+              <button className="px-4 py-2 bg-primary text-white rounded-r-lg hover:bg-primary/80 transition text-sm">
+                Subscribe
+              </button>
+            </div>
+          </motion.div>
         </div>
 
         {/* Bottom Section */}
@@ -147,8 +176,9 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
-            <div className="text-muted-foreground text-sm">
-              © {currentYear} SKILLYUG. All rights reserved.
+            <div className="text-muted-foreground text-sm text-center md:text-left">
+              © {currentYear} SKILLYUG. All rights reserved. <br />
+              <span className="text-xs">Made  by Skillyug Team</span>
             </div>
 
             {/* Back to Top */}
