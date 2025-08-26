@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image"; // ✅ for logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,12 +38,10 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection("#home")}
           >
-            <Image
-              src="/logo.png" // ✅ place your logo inside /public/logo.png
+            <img
+              src="/logo.png"   // ✅ Put logo.png inside "public" folder
               alt="Skillyug Logo"
-              width={160}
-              height={40}
-              priority
+              className="h-10 w-auto"
             />
           </motion.div>
 
