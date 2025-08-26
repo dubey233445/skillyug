@@ -1,51 +1,45 @@
 import { motion } from "framer-motion";
-import { 
-  SiReact, SiNextdotjs, SiTypescript, SiAngular, SiVuedotjs,
-  SiNodedotjs, SiPython, SiExpress, SiJava, SiFastapi,
-  SiReactnative, SiFlutter, SiKotlin, SiAndroid, SiExpo,
-  SiMongodb, SiPostgresql, SiFirebase, SiKubernetes, SiDevops
-} from "react-icons/si";
 
 const Technologies = () => {
   const techCategories = [
     {
       name: "Frontend",
       technologies: [
-        { name: "React", icon: <SiReact className="text-sky-400" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-gray-900 dark:text-white" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
-        { name: "Angular", icon: <SiAngular className="text-red-500" /> },
-        { name: "Vue.js", icon: <SiVuedotjs className="text-green-500" /> }
+        { name: "React", color: "text-blue-500" },
+        { name: "Next.js", color: "text-gray-800 dark:text-white" },
+        { name: "TypeScript", color: "text-blue-600" },
+        { name: "Angular", color: "text-cyan-500" },
+        { name: "Vue.js", color: "text-green-500" }
       ]
     },
     {
       name: "Backend",
       technologies: [
-        { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
-        { name: "Python", icon: <SiPython className="text-yellow-500" /> },
-        { name: "Express.js", icon: <SiExpress className="text-purple-600" /> },
-        { name: "Java", icon: <SiJava className="text-orange-600" /> },
-        { name: "FastAPI", icon: <SiFastapi className="text-teal-500" /> }
+        { name: "Node.js", color: "text-green-600" },
+        { name: "Python", color: "text-yellow-500" },
+        { name: "Express.js", color: "text-purple-600" },
+        { name: "Java", color: "text-green-700" },
+        { name: "FastAPI", color: "text-teal-500" }
       ]
     },
     {
       name: "Mobile",
       technologies: [
-        { name: "React Native", icon: <SiReactnative className="text-sky-400" /> },
-        { name: "Flutter", icon: <SiFlutter className="text-blue-400" /> },
-        { name: "Kotlin", icon: <SiKotlin className="text-pink-500" /> },
-        { name: "Android", icon: <SiAndroid className="text-green-500" /> },
-        { name: "Expo", icon: <SiExpo className="text-purple-600" /> }
+        { name: "React Native", color: "text-blue-500" },
+        { name: "Flutter", color: "text-blue-400" },
+        { name: "Kotlin", color: "text-gray-800 dark:text-white" },
+        { name: "Android", color: "text-green-500" },
+        { name: "Expo", color: "text-purple-600" }
       ]
     },
     {
       name: "Database & Cloud",
       technologies: [
-        { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-        { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
-        { name: "DevOps", icon: <SiDevops className="text-orange-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-        { name: "Kubernetes", icon: <SiKubernetes className="text-blue-600" /> }
+        { name: "MongoDB", color: "text-green-600" },
+        { name: "PostgreSQL", color: "text-blue-700" },
+        { name: "DevOps", color: "text-orange-500" },
+        { name: "Firebase", color: "text-yellow-500" },
+        { name: "Kubernetes", color: "text-blue-600" }
       ]
     }
   ];
@@ -53,7 +47,6 @@ const Technologies = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
@@ -65,8 +58,8 @@ const Technologies = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Our <span className="accent-gradient bg-clip-text text-transparent">Tech Stack</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Building robust, scalable solutions with the latest technologies
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            We use cutting-edge Technologies to build robust, scalable, and modern solutions
           </p>
         </motion.div>
 
@@ -89,10 +82,10 @@ const Technologies = () => {
                 {category.technologies.map((tech, techIndex) => (
                   <motion.div
                     key={tech.name}
-                    className="flex items-center gap-3 justify-center bg-background/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 text-center hover:border-primary/50 transition-all duration-300"
+                    className="bg-background/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 text-center hover:border-primary/50 transition-all duration-300"
                     whileHover={{ 
                       scale: 1.05,
-                      boxShadow: "0 0 20px rgba(59,130,246,0.5)" // nice blue glow
+                      boxShadow: "var(--shadow-glow)"
                     }}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -102,8 +95,9 @@ const Technologies = () => {
                     }}
                     viewport={{ once: true }}
                   >
-                    <span className="text-2xl">{tech.icon}</span>
-                    <span className="font-semibold">{tech.name}</span>
+                    <span className={`font-semibold ${tech.color}`}>
+                      {tech.name}
+                    </span>
                   </motion.div>
                 ))}
               </div>
