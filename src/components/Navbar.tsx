@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("#home")}
           >
             <img
-              src="/logo.png"   // ✅ Put logo.png inside "public" folder
+              src="/logo1.png"   // ✅ Put logo.png inside "public" folder
               alt="Skillyug Logo"
               className="h-10 w-auto"
             />
