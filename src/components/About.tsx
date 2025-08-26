@@ -7,30 +7,34 @@ const About = () => {
     {
       icon: Target,
       title: "Mission",
-      description: "To empower businesses with innovative software solutions that drive growth, efficiency, and digital transformation."
+      description:
+        "To empower businesses with innovative software solutions that drive growth, efficiency, and digital transformation.",
     },
     {
       icon: Eye,
       title: "Vision",
-      description: "To be the leading custom software development partner, known for delivering exceptional quality and cutting-edge technology solutions."
+      description:
+        "To be the leading custom software development partner, known for delivering exceptional quality and cutting-edge technology solutions.",
     },
     {
       icon: Award,
       title: "Excellence",
-      description: "We maintain the highest standards in code quality, project delivery, and client satisfaction through continuous improvement."
+      description:
+        "We maintain the highest standards in code quality, project delivery, and client satisfaction through continuous improvement.",
     },
     {
       icon: Users,
       title: "Collaboration",
-      description: "We believe in working closely with our clients as partners, ensuring transparent communication and shared success."
-    }
+      description:
+        "We believe in working closely with our clients as partners, ensuring transparent communication and shared success.",
+    },
   ];
 
   const achievements = [
     { number: "20+", label: "Successful Projects" },
     { number: "15+", label: "Happy Clients" },
     { number: "3+", label: "Years Experience" },
-    { number: "100%", label: "Client Satisfaction" }
+    { number: "100%", label: "Client Satisfaction" },
   ];
 
   return (
@@ -45,10 +49,14 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            About <span className="accent-gradient bg-clip-text text-transparent">SKILLYUG</span>
+            About{" "}
+            <span className="accent-gradient bg-clip-text text-transparent">
+              SKILLYUG
+            </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We are a Passionate team of Developers, Designers, and innovators dedicated to creating exceptional Software Solutions
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">
+            We are a passionate team of Developers, Designers, and Innovators
+            dedicated to creating exceptional software solutions.
           </p>
         </motion.div>
 
@@ -65,24 +73,26 @@ const About = () => {
             <h3 className="text-3xl font-bold text-foreground">
               Streamlining Processes with AI-driven Technology
             </h3>
-            
+
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
-              <p>
-                Founded with a vision to bridge the gap between complex business requirements and 
-                innovative technology solutions, SKILLYUG has been at the forefront of custom 
-                software development.
+              <p className="text-justify">
+                Founded with a vision to bridge the gap between complex business
+                requirements and innovative technology solutions, SKILLYUG has
+                been at the forefront of custom software development.
               </p>
-              
-              <p>
-                Our team combines deep technical expertise with a thorough understanding of business 
-                processes to deliver solutions that not only meet current needs but also scale with 
-                your future growth.
+
+              <p className="text-justify">
+                Our team combines deep technical expertise with a thorough
+                understanding of business processes to deliver solutions that
+                not only meet current needs but also scale with your future
+                growth.
               </p>
-              
-              <p>
-                From startups to enterprise clients, we've helped organizations across various 
-                industries transform their operations through intelligent automation, modern web 
-                applications, and cutting-edge mobile solutions.
+
+              <p className="text-justify">
+                From startups to enterprise clients, we've helped organizations
+                across various industries transform their operations through
+                intelligent automation, modern web applications, and
+                cutting-edge mobile solutions.
               </p>
             </div>
 
@@ -120,7 +130,7 @@ const About = () => {
             <h3 className="text-3xl font-bold text-foreground mb-8">
               Our Core Values
             </h3>
-            
+
             <div className="space-y-6">
               {values.map((value, index) => (
                 <motion.div
@@ -142,7 +152,7 @@ const About = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-muted-foreground leading-relaxed text-justify">
                         {value.description}
                       </p>
                     </CardContent>
@@ -164,12 +174,16 @@ const About = () => {
           <h3 className="text-3xl font-bold text-foreground mb-4">
             Ready to Start Your Next Project?
           </h3>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help transform your business with custom software solutions 
-            tailored to your specific needs.
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed text-justify">
+            Let's discuss how we can help transform your business with custom
+            software solutions tailored to your specific needs.
           </p>
           <motion.button
-            onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document.querySelector("#contact")?.scrollIntoView({
+                behavior: "smooth",
+              })
+            }
             className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-glow"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
