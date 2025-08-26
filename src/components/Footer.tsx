@@ -78,7 +78,7 @@ const Footer = () => {
                   <strong className="text-foreground">Email:</strong> consultantskillyug@gmail.com
                 </p>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Phone:</strong> +91 123456789
+                  <strong className="text-foreground">Phone:</strong>91+ 9450935939
                 </p>
                 <p className="text-muted-foreground">
                   <strong className="text-foreground">Location:</strong> Noida, UP
