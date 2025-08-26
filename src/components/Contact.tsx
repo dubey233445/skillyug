@@ -14,7 +14,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+91 123456789",
+      details: "+91 9450935939",
       description: ""
     },
     {
@@ -126,7 +126,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   className="flex items-center space-x-2"
-                  onClick={() => window.open("tel:+91 123456789")}
+                  onClick={() => window.open("tel:+91 9450935939")}
                 >
                   <Phone className="h-4 w-4" />
                   <span>Call Now</span>
