@@ -61,7 +61,7 @@ const About = () => {
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
           {/* Left Content */}
           <motion.div
             className="space-y-6"
