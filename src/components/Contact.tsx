@@ -49,8 +49,9 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Information */}
+        {/* Grid Layout */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Contact Information (Left Column) */}
           <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -30 }}
@@ -135,9 +136,9 @@ const Contact = () => {
             </motion.div>
           </motion.div>
 
-          {/* Contact Form CTA */}
+          {/* Contact Form CTA (Right Column) */}
           <motion.div
-            className="flex items-center justify-center"
+            className="flex justify-center"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
