@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("#home")}
           >
             <img
-              src="/logo1.png" // ✅ Logo in public folder
+              src="/logo1.png"
               alt="Skillyug Logo"
               className="h-10 w-auto"
             />
@@ -74,23 +74,23 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation (Full Screen Overlay) */}
+      {/* Mobile Dropdown Navigation (Slide Down) */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden fixed inset-0 z-[999999] bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="md:hidden bg-background/95 backdrop-blur-md border-b border-border flex flex-col items-start px-6 py-4 space-y-4"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             {navItems.map((item) => (
               <motion.button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-2xl font-semibold text-foreground hover:text-primary transition-colors duration-200"
-                whileTap={{ scale: 0.95 }}
+                className="text-lg font-medium text-foreground hover:text-primary transition-colors duration-200 text-left w-full"
+                whileTap={{ scale: 0.97 }}
               >
                 {item.name}
               </motion.button>
