@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Navigation (Slide Down) */}
+      {/* Mobile Dropdown Navigation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -86,7 +86,8 @@ const Navbar = () => {
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-4">
+            {/* Align items with Hero section */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col space-y-4">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
