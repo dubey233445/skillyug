@@ -42,22 +42,35 @@ const Loader = ({ onComplete }: LoaderProps) => {
         />
       ))}
 
-      {/* 🚀 Logo Entry */}
-      <motion.img
-        src="/logo1.png"
-        alt="Logo"
-        className="h-28 md:h-40 w-auto relative z-10 drop-shadow-lg"
+      {/* 🚀 Logo with Glow */}
+      <motion.div
+        className="relative z-10 flex items-center justify-center"
         initial={{ scale: 0, rotate: -180, opacity: 0 }}
         animate={{ scale: 1, rotate: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-      />
+      >
+        <motion.img
+          src="/logo1.png"
+          alt="Logo"
+          className="h-28 md:h-40 w-auto drop-shadow-[0_0_25px_rgba(0,255,255,0.7)]"
+        />
 
-      {/* ✨ Shine Sweep */}
-      <motion.div
-        className="absolute h-40 w-40 bg-gradient-to-r from-transparent via-white/40 to-transparent rotate-45 z-20"
-        animate={{ x: ["-200%", "200%"] }}
-        transition={{ duration: 1.5, repeat: Infinity, delay: 1 }}
-      />
+        {/* ✨ Neon Shine Sweep (Cyberpunk) */}
+        <motion.div
+          className="absolute inset-0 overflow-hidden rounded-lg pointer-events-none"
+        >
+          <motion.div
+            className="absolute top-0 left-[-150%] h-full w-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent rotate-12"
+            animate={{ left: ["-150%", "150%"] }}
+            transition={{
+              duration: 1.8,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatDelay: 2,
+            }}
+          />
+        </motion.div>
+      </motion.div>
 
       {/* 📍 Bottom Pulse Bar */}
       <motion.div
@@ -66,7 +79,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 0.5 }}
       >
-        <div className="w-20 h-1.5 bg-primary rounded-full animate-pulse" />
+        <div className="w-20 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_15px_rgba(0,255,255,0.7)]" />
       </motion.div>
     </motion.div>
   );
