@@ -29,7 +29,8 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Navbar Inner Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div
@@ -79,22 +80,24 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden bg-background/95 backdrop-blur-md border-b border-border flex flex-col items-start px-6 py-4 space-y-4"
+            className="md:hidden border-b border-border bg-background/95 backdrop-blur-md"
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            {navItems.map((item) => (
-              <motion.button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="text-lg font-medium text-foreground hover:text-primary transition-colors duration-200 text-left w-full"
-                whileTap={{ scale: 0.97 }}
-              >
-                {item.name}
-              </motion.button>
-            ))}
+            <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <motion.button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-lg font-medium text-foreground hover:text-primary transition-colors duration-200 text-left w-full"
+                  whileTap={{ scale: 0.97 }}
+                >
+                  {item.name}
+                </motion.button>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
