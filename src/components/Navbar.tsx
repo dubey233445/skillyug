@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("#home")}
           >
             <img
-              src="/logo1.png"   // ✅ Put logo.png inside "public" folder
+              src="/logo1.png" // ✅ Logo in public folder
               alt="Skillyug Logo"
               className="h-10 w-auto"
             />
@@ -79,11 +79,11 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden fixed top-16 right-2 w-64 bg-background border border-border shadow-lg rounded-lg overflow-hidden"
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 40 }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
+            className="md:hidden fixed top-16 left-0 w-full bg-background/95 backdrop-blur-md border-t border-border shadow-lg z-[99999]"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
