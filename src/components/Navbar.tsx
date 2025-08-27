@@ -74,29 +74,27 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation (Full Screen Overlay) */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             key="mobile-nav"
-            className="md:hidden fixed top-16 left-0 w-full bg-background/95 backdrop-blur-md border-t border-border shadow-lg z-[99999]"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            className="md:hidden fixed inset-0 z-[999999] bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="px-4 py-4 space-y-2">
-              {navItems.map((item) => (
-                <motion.button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {item.name}
-                </motion.button>
-              ))}
-            </div>
+            {navItems.map((item) => (
+              <motion.button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className="text-2xl font-semibold text-foreground hover:text-primary transition-colors duration-200"
+                whileTap={{ scale: 0.95 }}
+              >
+                {item.name}
+              </motion.button>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>
