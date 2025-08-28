@@ -2,13 +2,15 @@ import { motion } from "framer-motion";
 import { Linkedin, Twitter, Github } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import CountUp from "react-countup";
 
 const Team = () => {
   const teamMembers = [
+    // 👑 Top Leadership
     {
       name: "Vinayak Pandey",
       role: "Founder & CEO",
-      bio: "Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
+      bio: "Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
       image: "ceo.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
@@ -16,9 +18,11 @@ const Team = () => {
         github: "https://github.com/vinayakpandeycode"
       }
     },
+
+    // 🏢 C-Level Executives
     {
       name: "Ashish Dubey",
-      role: "Chief Developer Officer(CDO)",
+      role: "Chief Developer Officer (CDO)",
       bio: "Driving tech growth and innovative product development.",
       image: "tr.jpg",
       social: {
@@ -29,8 +33,8 @@ const Team = () => {
     },
     {
       name: "Vibhanshu Mishra",
-      role: "Chief Operating Officer",
-      bio: "Driving Blockchain & Android Development and process optimization and strategic focus",
+      role: "Chief Operating Officer (COO)",
+      bio: "Driving Blockchain & Android Development and process optimization and strategic focus.",
       image: "ty.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
@@ -40,8 +44,8 @@ const Team = () => {
     },
     {
       name: "Omkar Pandey",
-      role: "Chief Finance Officer",
-      bio: "Driving growth through smart financial planning and seamless client-tech Coordination.",
+      role: "Chief Finance Officer (CFO)",
+      bio: "Driving growth through smart financial planning and seamless client-tech Coordination.",
       image: "om.jpg",
       social: {
         linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
@@ -51,8 +55,8 @@ const Team = () => {
     },
     {
       name: "Yash Pandey",
-      role: "Chief Marketing Officer",
-      bio: "Driving brand growth with creativity, strategy, and innovation..",
+      role: "Chief Marketing Officer (CMO)",
+      bio: "Driving brand growth with creativity, strategy, and innovation.",
       image: "yt.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
@@ -62,7 +66,7 @@ const Team = () => {
     },
     {
       name: "Vaibhav Kumar",
-      role: "Chief Technology Officer",
+      role: "Chief Technology Officer (CTO)",
       bio: "Leading with innovation to build scalable and impactful tech solutions.",
       image: "vd.jpg",
       social: {
@@ -71,10 +75,12 @@ const Team = () => {
         github: "https://github.com/Vaibhav-Rep"
       }
     },
+
+    // 💡 Creative & Support Roles
     {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
-      bio: "Crafting content that builds brands and engages audience.",
+      bio: "Crafting content that builds brands and engages audience.",
       image: "ad.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
@@ -93,11 +99,10 @@ const Team = () => {
         github: "#"
       }
     },
-    // ✅ New Card 1
     {
       name: "Akansha Shukla",
       role: "Assistant Marketing Manager",
-      bio: "Assistant Marketing Officer, excels in Research and strategic Marketing..",
+      bio: "Assistant Marketing Officer, excels in Research and Strategic Marketing.",
       image: "ake.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/akanksha-sunil-shukla-7720072a7/",
@@ -105,11 +110,10 @@ const Team = () => {
         github: "https://github.com/Akankshashukla7110"
       }
     },
-    // ✅ New Card 2
     {
       name: "Hariom Tripathi",
       role: "Social Media Manager & Graphics Designer",
-      bio: "Design Head, Social Media Manager.",
+      bio: "Design Head, Social Media Manager.",
       image: "hrt.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/ihariomtripathi/",
@@ -122,6 +126,7 @@ const Team = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
@@ -134,7 +139,7 @@ const Team = () => {
             Meet Our <span className="accent-gradient bg-clip-text text-transparent">Team</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our Talented Team of developers, designers and innovators working together to bring your vision to life
+            Our talented team of developers, designers and innovators working together to bring your vision to life
           </p>
         </motion.div>
 
@@ -147,10 +152,11 @@ const Team = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
+              whileHover={{ y: -8, rotateY: 3, scale: 1.02 }}
               className="group"
             >
               <Card className="card-gradient border-border/50 hover:border-primary/50 transition-all duration-300 hover-glow overflow-hidden">
+                
                 {/* Member Photo */}
                 <div className="relative h-64 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden flex items-center justify-center">
                   <Avatar className="w-32 h-32">
@@ -163,28 +169,19 @@ const Team = () => {
                   {/* Social Links Overlay */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="flex space-x-4">
-                      <motion.a
-                        href={member.social.linkedin}
+                      <motion.a href={member.social.linkedin} target="_blank"
                         className="p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                      >
+                        whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Linkedin className="h-5 w-5" />
                       </motion.a>
-                      <motion.a
-                        href={member.social.twitter}
+                      <motion.a href={member.social.twitter} target="_blank"
                         className="p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                      >
+                        whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Twitter className="h-5 w-5" />
                       </motion.a>
-                      <motion.a
-                        href={member.social.github}
+                      <motion.a href={member.social.github} target="_blank"
                         className="p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                      >
+                        whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Github className="h-5 w-5" />
                       </motion.a>
                     </div>
@@ -192,12 +189,15 @@ const Team = () => {
                 </div>
 
                 <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-primary font-medium mb-3">
+
+                  {/* Gradient Role Badge */}
+                  <p className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md mb-3">
                     {member.role}
                   </p>
+
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {member.bio}
                   </p>
@@ -207,7 +207,7 @@ const Team = () => {
           ))}
         </div>
 
-        {/* Team Stats */}
+        {/* Team Stats with Counter */}
         <motion.div
           className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20"
           initial={{ opacity: 0, y: 30 }}
@@ -216,9 +216,9 @@ const Team = () => {
           viewport={{ once: true }}
         >
           {[
-            { label: "Team Members", value: "8+" },
-            { label: "Combined Experience", value: "13+ Years" },
-            { label: "Certifications", value: "50+" }
+            { label: "Team Members", value: 10 },
+            { label: "Combined Experience", value: 13 },
+            { label: "Certifications", value: 50 }
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -226,7 +226,7 @@ const Team = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                {stat.value}
+                <CountUp end={stat.value} duration={2} />+
               </div>
               <div className="text-muted-foreground font-medium">
                 {stat.label}
