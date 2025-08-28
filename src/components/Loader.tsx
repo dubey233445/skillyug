@@ -125,32 +125,35 @@ const Loader = ({ onComplete }: LoaderProps) => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <motion.img
-            src="/logo1.png"
-            alt="Logo"
-            className="h-28 md:h-40 w-auto drop-shadow-[0_0_30px_rgba(0,255,255,0.9)]"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 1, 0.3, 1, 0.6, 1] }} // Neon Flicker
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.3, 0.5, 0.7, 1],
-            }}
-          />
-
-          {/* ✨ Shine Sweep */}
-          <motion.div className="absolute inset-0 overflow-hidden rounded-lg pointer-events-none">
-            <motion.div
-              className="absolute top-0 left-[-150%] h-full w-[150%] bg-gradient-to-r from-transparent via-white/70 to-transparent rotate-12"
-              animate={{ left: ["-150%", "150%"] }}
+          <div className="relative inline-block">
+            {/* Logo */}
+            <motion.img
+              src="/logo1.png"
+              alt="Logo"
+              className="h-28 md:h-40 w-auto relative z-10 drop-shadow-[0_0_30px_rgba(0,255,255,0.9)]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 0.3, 1, 0.6, 1] }} // Neon Flicker
               transition={{
                 duration: 2,
                 ease: "easeInOut",
-                repeat: Infinity,
-                repeatDelay: 1.5,
+                times: [0, 0.2, 0.3, 0.5, 0.7, 1],
               }}
             />
-          </motion.div>
+
+            {/* ✨ Shine only on Logo */}
+            <motion.div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
+              <motion.div
+                className="absolute top-0 left-[-150%] h-full w-[150%] bg-gradient-to-r from-transparent via-white/70 to-transparent rotate-12 mix-blend-screen"
+                animate={{ left: ["-150%", "150%"] }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatDelay: 1.5,
+                }}
+              />
+            </motion.div>
+          </div>
 
           {/* ⚡ Glitch Text */}
           <motion.div
