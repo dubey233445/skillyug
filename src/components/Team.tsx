@@ -153,9 +153,9 @@ const Team = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -8, rotateY: 3, scale: 1.02 }}
-              className="group"
+              className="group h-full"
             >
-              <Card className="card-gradient border-border/50 hover:border-primary/50 transition-all duration-300 hover-glow overflow-hidden">
+              <Card className="card-gradient border-border/50 hover:border-primary/50 transition-all duration-300 hover-glow overflow-hidden flex flex-col h-full">
                 
                 {/* Member Photo */}
                 <div className="relative h-64 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden flex items-center justify-center">
@@ -188,7 +188,7 @@ const Team = () => {
                   </div>
                 </div>
 
-                <CardContent className="p-6 text-center">
+                <CardContent className="p-6 text-center flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                     {member.name}
                   </h3>
@@ -198,7 +198,7 @@ const Team = () => {
                     {member.role}
                   </p>
 
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
                     {member.bio}
                   </p>
                 </CardContent>
