@@ -11,7 +11,7 @@ const Team = () => {
       name: "Vinayak Pandey",
       role: "Founder & CEO",
       bio: "Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
-      image: "ceo.jpg",
+      image: "qw.png",
       social: {
         linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
         twitter: "#",
@@ -24,7 +24,7 @@ const Team = () => {
       name: "Ashish Dubey",
       role: "Chief Developer Officer (CDO)",
       bio: "Driving tech growth and innovative product development.",
-      image: "tr.jpg",
+      image: "ashisht.png",
       social: {
         linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
         twitter: "#",
@@ -35,7 +35,7 @@ const Team = () => {
       name: "Vibhanshu Mishra",
       role: "Chief Operating Officer (COO)",
       bio: "Driving Blockchain & Android Development and process optimization and strategic focus.",
-      image: "ty.jpg",
+      image: "qwe.png",
       social: {
         linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
         twitter: "#",
@@ -46,7 +46,7 @@ const Team = () => {
       name: "Omkar Pandey",
       role: "Chief Finance Officer (CFO)",
       bio: "Driving growth through smart financial planning and seamless client-tech Coordination.",
-      image: "om.jpg",
+      image: "omq.png",
       social: {
         linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
         twitter: "#",
@@ -57,7 +57,7 @@ const Team = () => {
       name: "Yash Pandey",
       role: "Chief Marketing Officer (CMO)",
       bio: "Driving brand growth with creativity, strategy, and innovation.",
-      image: "yt.jpg",
+      image: "vbt.png",
       social: {
         linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
         twitter: "#",
@@ -68,7 +68,7 @@ const Team = () => {
       name: "Vaibhav Kumar",
       role: "Chief Technology Officer (CTO)",
       bio: "Leading with innovation to build scalable and impactful tech solutions.",
-      image: "vd.jpg",
+      image: "tp.png",
       social: {
         linkedin: "https://www.linkedin.com/in/vaibhavkumar2611/",
         twitter: "#",
@@ -81,7 +81,7 @@ const Team = () => {
       name: "Aditi Mall",
       role: "Social Media & Content Assistant",
       bio: "Crafting content that builds brands and engages audience.",
-      image: "ad.jpg",
+      image: "aditi.png",
       social: {
         linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
         twitter: "#",
@@ -114,7 +114,7 @@ const Team = () => {
       name: "Hariom Tripathi",
       role: "Social Media Manager & Graphics Designer",
       bio: "Design Head, Social Media Manager.",
-      image: "hrt.jpg",
+      image: "hari.png",
       social: {
         linkedin: "https://www.linkedin.com/in/ihariomtripathi/",
         twitter: "#",
