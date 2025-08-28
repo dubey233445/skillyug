@@ -1,35 +1,58 @@
 import { motion } from "framer-motion";
 import { Linkedin, Twitter, Mail, ArrowUp, Instagram } from "lucide-react";
+import { useState } from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
 
   const footerLinks = {
     Services: [
       { name: "Web Development", href: "#services" },
       { name: "Mobile Apps", href: "#services" },
       { name: "AI Automation", href: "#services" },
-      { name: "Custom Solutions", href: "#services" }
+      { name: "Custom Solutions", href: "#services" },
     ],
     Company: [
       { name: "About Us", href: "#about" },
       { name: "Our Team", href: "#team" },
       { name: "Portfolio", href: "#portfolio" },
-      { name: "Contact", href: "#contact" }
+      { name: "Contact", href: "#contact" },
     ],
     Technologies: [
       { name: "React & Next.js", href: "#" },
       { name: "Node.js", href: "#" },
       { name: "Python & AI", href: "#" },
-      { name: "Mobile Development", href: "#" }
-    ]
+      { name: "Mobile Development", href: "#" },
+    ],
   };
 
   const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true", color: "hover:bg-blue-600" },
-    { name: "Twitter", icon: Twitter, href: "https://x.com/skillyug063", color: "hover:bg-sky-500" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/skillyug?igsh=ZnFwbGM4MW1tY29m", color: "hover:bg-pink-500" },
-    { name: "Email", icon: Mail, href: "mailto:consultantskillyug@gmail.com", color: "hover:bg-red-500" }
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/smartcore-software/?viewAsMember=true",
+      color: "hover:bg-blue-600",
+    },
+    {
+      name: "Twitter",
+      icon: Twitter,
+      href: "https://x.com/skillyug063",
+      color: "hover:bg-sky-500",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/skillyug?igsh=ZnFwbGM4MW1tY29m",
+      color: "hover:bg-pink-500",
+    },
+    {
+      name: "Email",
+      icon: Mail,
+      href: "mailto:consultantskillyug@gmail.com",
+      color: "hover:bg-red-500",
+    },
   ];
 
   const scrollToTop = () => {
@@ -43,14 +66,19 @@ const Footer = () => {
     }
   };
 
+  const handleSubscribe = () => {
+    if (email.trim() !== "") {
+      setSubscribed(true);
+      setEmail("");
+    }
+  };
+
   return (
     <footer className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <motion.div
@@ -80,13 +108,16 @@ const Footer = () => {
                 viewport={{ once: true }}
               >
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Email:</strong> consultantskillyug@gmail.com
+                  <strong className="text-foreground">Email:</strong>{" "}
+                  consultantskillyug@gmail.com
                 </p>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Phone:</strong> +91 9450935939
+                  <strong className="text-foreground">Phone:</strong> +91
+                  9450935939
                 </p>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Location:</strong> Noida, UP
+                  <strong className="text-foreground">Location:</strong> Noida,
+                  UP
                 </p>
               </motion.div>
 
@@ -105,8 +136,14 @@ const Footer = () => {
                     className={`p-2 bg-muted rounded-lg text-muted-foreground transition-all duration-300 ${social.color} hover:text-white`}
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    target={social.href.startsWith('mailto') ? undefined : "_blank"}
-                    rel={social.href.startsWith('mailto') ? undefined : "noopener noreferrer"}
+                    target={
+                      social.href.startsWith("mailto") ? undefined : "_blank"
+                    }
+                    rel={
+                      social.href.startsWith("mailto")
+                        ? undefined
+                        : "noopener noreferrer"
+                    }
                   >
                     <social.icon className="h-5 w-5" />
                   </motion.a>
@@ -115,30 +152,38 @@ const Footer = () => {
             </div>
 
             {/* Footer Links */}
-            {Object.entries(footerLinks).map(([category, links], categoryIndex) => (
-              <motion.div
-                key={category}
-                className="space-y-4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * (categoryIndex + 1) }}
-                viewport={{ once: true }}
-              >
-                <h4 className="text-foreground font-semibold text-lg">{category}</h4>
-                <ul className="space-y-2">
-                  {links.map((link) => (
-                    <li key={link.name}>
-                      <button
-                        onClick={() => link.href.startsWith('#') ? scrollToSection(link.href) : window.open(link.href)}
-                        className="text-muted-foreground hover:text-primary transition-colors duration-200 text-left"
-                      >
-                        {link.name}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+            {Object.entries(footerLinks).map(
+              ([category, links], categoryIndex) => (
+                <motion.div
+                  key={category}
+                  className="space-y-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 * (categoryIndex + 1) }}
+                  viewport={{ once: true }}
+                >
+                  <h4 className="text-foreground font-semibold text-lg">
+                    {category}
+                  </h4>
+                  <ul className="space-y-2">
+                    {links.map((link) => (
+                      <li key={link.name}>
+                        <button
+                          onClick={() =>
+                            link.href.startsWith("#")
+                              ? scrollToSection(link.href)
+                              : window.open(link.href)
+                          }
+                          className="text-muted-foreground hover:text-primary transition-colors duration-200 text-left"
+                        >
+                          {link.name}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )
+            )}
           </div>
 
           {/* Newsletter */}
@@ -149,20 +194,34 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold text-foreground">Stay Updated</h4>
+            <h4 className="text-lg font-semibold text-foreground">
+              Stay Updated
+            </h4>
             <p className="text-sm text-muted-foreground mt-1">
               Subscribe to get the latest news and updates.
             </p>
-            <div className="mt-4 flex justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 rounded-l-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary w-64 text-sm"
-              />
-              <button className="px-4 py-2 bg-primary text-white rounded-r-lg hover:bg-primary/80 transition text-sm">
-                Subscribe
-              </button>
-            </div>
+
+            {subscribed ? (
+              <p className="mt-4 text-green-500 font-medium">
+                ✅ Thanks for Subscribing!
+              </p>
+            ) : (
+              <div className="mt-4 flex justify-center">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="px-4 py-2 rounded-l-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary w-64 text-sm text-foreground bg-background"
+                />
+                <button
+                  onClick={handleSubscribe}
+                  className="px-4 py-2 bg-primary text-white rounded-r-lg hover:bg-primary/80 transition text-sm"
+                >
+                  Subscribe
+                </button>
+              </div>
+            )}
           </motion.div>
         </div>
 
@@ -178,7 +237,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-muted-foreground text-sm text-center md:text-left">
               © {currentYear} SKILLYUG. All rights reserved. <br />
-              <span className="text-xs">Made  by Skillyug Team</span>
+              <span className="text-xs">Made by Skillyug Team</span>
             </div>
 
             {/* Back to Top */}
