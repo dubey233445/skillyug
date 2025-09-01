@@ -114,7 +114,7 @@ const Team = () => {
       name: "Tanya ojha",
       role: "Social Media Manager & Graphics Designer",
       bio: "Design Head, Social Media Manager.",
-      image: "hari.png",
+      image: "aew.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/ihariomtripathi/",
         twitter: "#",
