@@ -116,9 +116,9 @@ const Team = () => {
       bio: "Design Head, Social Media Manager.",
       image: "aew.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/ihariomtripathi/",
+        linkedin: "http://linkedin.com/in/aparna-ojha-34b7aa381",
         twitter: "#",
-        github: "https://github.com/HariOmTripathi23"
+        github: "#"
       }
     }
   ];
