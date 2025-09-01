@@ -111,7 +111,7 @@ const Team = () => {
       }
     },
     {
-      name: "Hariom Tripathi",
+      name: "Tanya ojha",
       role: "Social Media Manager & Graphics Designer",
       bio: "Design Head, Social Media Manager.",
       image: "hari.png",
