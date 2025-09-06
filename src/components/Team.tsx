@@ -89,17 +89,6 @@ const Team = () => {
       }
     },
     {
-      name: "Amara Ezeokafor",
-      role: "UI/UX Designer",
-      bio: "UX Research, Usability Testing, Figma, and Communication and Marketing.",
-      image: "a5.jpg",
-      social: {
-        linkedin: "http://www.linkedin.com/in/amara-callista",
-        twitter: "#",
-        github: "#"
-      }
-    },
-    {
       name: "Akansha Shukla",
       role: "Assistant Marketing Manager",
       bio: "Assistant Marketing Officer, excels in Research and Strategic Marketing.",
