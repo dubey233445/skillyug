@@ -129,10 +129,28 @@
   body {
     @apply bg-background text-foreground font-inter antialiased;
     scroll-behavior: smooth;
+    /* Improve mobile performance */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
   }
 
   html {
     scroll-behavior: smooth;
+    /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
+  }
+
+  /* Mobile touch improvements */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  /* Improve mobile scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -163,22 +181,32 @@
     animation: slideUp 0.8s ease-out forwards;
   }
 
-  /* Hover Effects */
-  .hover-lift {
-    transition: var(--transition-smooth);
+  /* Hover Effects - Disable on mobile for better performance */
+  @media (hover: hover) and (pointer: fine) {
+    .hover-lift {
+      transition: var(--transition-smooth);
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-elevated);
+    }
+
+    .hover-glow {
+      transition: var(--transition-smooth);
+    }
+
+    .hover-glow:hover {
+      box-shadow: var(--shadow-glow);
+    }
   }
 
-  .hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-elevated);
-  }
-
-  .hover-glow {
-    transition: var(--transition-smooth);
-  }
-
-  .hover-glow:hover {
-    box-shadow: var(--shadow-glow);
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .hover-lift:active {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-elevated);
+    }
   }
 }
 

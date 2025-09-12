@@ -81,7 +81,7 @@ const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-4">
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -92,7 +92,7 @@ const Hero = () => {
                   {displayText}
                 </span>
                 <motion.span
-                  className="inline-block w-1 h-16 bg-primary ml-2"
+                  className="inline-block w-0.5 sm:w-1 h-8 sm:h-12 md:h-16 bg-primary ml-1 sm:ml-2"
                   animate={{ opacity: [0, 1, 0] }}
                   transition={{ duration: 1, repeat: Infinity }}
                 />
@@ -100,7 +100,7 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p
-              className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -111,7 +111,7 @@ const Hero = () => {
 
           {/* Feature Icons */}
           <motion.div
-            className="flex justify-center space-x-8 py-8"
+            className="flex justify-center space-x-4 sm:space-x-6 md:space-x-8 py-6 sm:py-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -123,14 +123,14 @@ const Hero = () => {
             ].map((item) => (
               <motion.div
                 key={item.label}
-                className="flex flex-col items-center space-y-2"
+                className="flex flex-col items-center space-y-1 sm:space-y-2"
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-full">
-                  <item.icon className="h-8 w-8 text-white" />
+                <div className="p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-full">
+                  <item.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
-                <span className="text-white/70 text-sm font-medium">
+                <span className="text-white/70 text-xs sm:text-sm font-medium">
                   {item.label}
                 </span>
               </motion.div>
@@ -139,7 +139,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6"
+            className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 md:space-x-6 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -147,10 +147,10 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-full hover-glow transition-all duration-300"
+              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full hover-glow transition-all duration-300"
             >
               Start Your Project
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </Button>
 
             <Button
@@ -161,7 +161,7 @@ const Hero = () => {
                   .querySelector("#services")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
+              className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full backdrop-blur-sm"
             >
               View Services
             </Button>

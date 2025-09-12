@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       {/* Container aligned with Hero */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
           <motion.div
             className="flex items-center flex-shrink-0 cursor-pointer"
@@ -42,20 +42,20 @@ const Navbar = () => {
             <img
               src="/logo1.png"
               alt="Skillyug Logo"
-              className="h-10 w-auto"
+              className="h-8 sm:h-10 w-auto"
             />
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navItems.map((item) => (
-              <motion.button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-                whileHover={{ y: -2 }}
-                whileTap={{ y: 0 }}
-              >
+          <motion.button
+            key={item.name}
+            onClick={() => scrollToSection(item.href)}
+            className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm lg:text-base px-2 py-1"
+            whileHover={{ y: -2 }}
+            whileTap={{ y: 0 }}
+          >
                 {item.name}
               </motion.button>
             ))}
@@ -67,9 +67,9 @@ const Navbar = () => {
               variant="outline"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/90 h-10 w-10 p-0 flex items-center justify-center"
+              className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/90 h-9 w-9 sm:h-10 sm:w-10 p-0 flex items-center justify-center"
             >
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isOpen ? <X className="h-4 w-4 sm:h-5 sm:w-5" /> : <Menu className="h-4 w-4 sm:h-5 sm:w-5" />}
             </Button>
           </div>
         </div>
@@ -86,12 +86,12 @@ const Navbar = () => {
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col space-y-4">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col space-y-3">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-lg font-medium text-foreground hover:text-primary transition-colors duration-200 text-left w-full"
+                  className="text-base sm:text-lg font-medium text-foreground hover:text-primary transition-colors duration-200 text-left w-full py-2 px-2 rounded-lg hover:bg-primary/5 active:bg-primary/10"
                   whileTap={{ scale: 0.97 }}
                 >
                   {item.name}

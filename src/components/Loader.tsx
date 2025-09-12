@@ -22,7 +22,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
   return (
     <>
       {/* ✅ Inline CSS (Glitch + Scanline Animations) */}
-      <style jsx>{`
+      <style>{`
         @keyframes scanlines {
           from {
             background-position: 0 0;
