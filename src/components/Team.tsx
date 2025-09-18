@@ -109,7 +109,7 @@ const teamMembers = [
     name: "Shifa Praveen ",
     role: "UI & UX designer",
     bio: "Passionate about building Ui for website and app.",
-    image: "rahul.png",
+    image: "shifa.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/shifa-parveen-45a5b0326/?originalSubdomain=in",
       twitter: "#",
