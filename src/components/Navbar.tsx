@@ -49,16 +49,26 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navItems.map((item) => (
-          <motion.button
-            key={item.name}
-            onClick={() => scrollToSection(item.href)}
-            className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm lg:text-base px-2 py-1"
-            whileHover={{ y: -2 }}
-            whileTap={{ y: 0 }}
-          >
+              <motion.button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm lg:text-base px-2 py-1"
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+              >
                 {item.name}
               </motion.button>
             ))}
+
+            {/* Client Review Button */}
+            <Button
+              variant="default"
+              size="sm"
+              onClick={() => scrollToSection("#client-review")}
+              className="ml-2 bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              Client Review
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,7 +79,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 bg-background/90 h-9 w-9 sm:h-10 sm:w-10 p-0 flex items-center justify-center"
             >
-              {isOpen ? <X className="h-4 w-4 sm:h-5 sm:w-5" /> : <Menu className="h-4 w-4 sm:h-5 sm:w-5" />}
+              {isOpen ? (
+                <X className="h-4 w-4 sm:h-5 sm:w-5" />
+              ) : (
+                <Menu className="h-4 w-4 sm:h-5 sm:w-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -97,6 +111,16 @@ const Navbar = () => {
                   {item.name}
                 </motion.button>
               ))}
+
+              {/* Client Review Button for Mobile */}
+              <Button
+                variant="default"
+                size="sm"
+                onClick={() => scrollToSection("#client-review")}
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+              >
+                Client Review
+              </Button>
             </div>
           </motion.div>
         )}
