@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Portfolio", href: "#portfolio" },
     { name: "About Us", href: "#about" },
     { name: "Contact Us", href: "#contact" },
+    { name: "Client Review", href: "#contact" },
   ];
 
   const scrollToSection = (sectionId: string) => {
