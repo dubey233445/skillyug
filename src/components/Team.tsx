@@ -223,7 +223,7 @@ const Team = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          {teamStats.map((stat, index) => (
+          {teamStats.map((stat) => (
             <motion.div
               key={stat.label}
               className="text-center"
