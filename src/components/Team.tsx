@@ -1,116 +1,123 @@
-import { motion } from "framer-motion";
-import { Linkedin, Twitter, Github } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import CountUp from "react-countup";
-
-const Team = () => {
-  const teamMembers = [
-    // 👑 Top Leadership
-    {
-      name: "Vinayak Pandey",
-      role: "Founder & CEO",
-      bio: "Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
-      image: "qw.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
-        twitter: "#",
-        github: "https://github.com/vinayakpandeycode"
-      }
-    },
-
-    // 🏢 C-Level Executives
-    {
-      name: "Ashish Dubey",
-      role: "Chief Developer Officer (CDO)",
-      bio: "Driving tech growth and innovative product development.",
-      image: "ashisht.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
-        twitter: "#",
-        github: "https://github.com/dubey233445"
-      }
-    },
-    {
-      name: "Vibhanshu Mishra",
-      role: "Chief Operating Officer (COO)",
-      bio: "Driving Blockchain & Android Development and process optimization and strategic focus.",
-      image: "qwe.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
-        twitter: "#",
-        github: "https://github.com/VibhanshuMishra11"
-      }
-    },
-    {
-      name: "Omkar Pandey",
-      role: "Chief Finance Officer (CFO)",
-      bio: "Driving growth through smart financial planning and seamless client-tech Coordination.",
-      image: "omq.png",
-      social: {
-        linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
-        twitter: "#",
-        github: "https://github.com/Omkar03092006"
-      }
-    },
-    {
-      name: "Yash Pandey",
-      role: "Chief Marketing Officer (CMO)",
-      bio: "Driving brand growth with creativity, strategy, and innovation.",
-      image: "vbt.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
-        twitter: "#",
-        github: "https://github.com/yashpandey205"
-      }
-    },
-    {
-      name: "Vaibhav Kumar",
-      role: "Chief Technology Officer (CTO)",
-      bio: "Leading with innovation to build scalable and impactful tech solutions.",
-      image: "tp.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/vaibhavkumar2611/",
-        twitter: "#",
-        github: "https://github.com/Vaibhav-Rep"
-      }
-    },
-
-    // 💡 Creative & Support Roles
-    {
-      name: "Aditi Mall",
-      role: "Social Media & Content Assistant",
-      bio: "Crafting content that builds brands and engages audience.",
-      image: "aditi.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
-        twitter: "#",
-        github: "https://github.com/Omkar03092006"
-      }
-    },
-    {
-      name: "Akansha Shukla",
-      role: "Assistant Marketing Manager",
-      bio: "Assistant Marketing Officer, excels in Research and Strategic Marketing.",
-      image: "ak2.png",
-      social: {
-        linkedin: "https://www.linkedin.com/in/akanksha-sunil-shukla-7720072a7/",
-        twitter: "#",
-        github: "https://github.com/Akankshashukla7110"
-      }
-    },
-    {
-      name: "Tanya ojha",
-      role: "Social Media Manager & Graphics Designer",
-      bio: "Design Head, Social Media Manager.",
-      image: "aew.jpg",
-      social: {
-        linkedin: "http://linkedin.com/in/aparna-ojha-34b7aa381",
-        twitter: "#",
-        github: "#"
-      }
+const teamMembers = [
+  // 👑 Top Leadership
+  {
+    name: "Vinayak Pandey",
+    role: "Founder & CEO",
+    bio: "Driving innovation, growth, and impactful digital solutions with a vision to empower Businesses.",
+    image: "qw.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/vinayakpandeya/",
+      twitter: "#",
+      github: "https://github.com/vinayakpandeycode"
     }
-  ];
+  },
+
+  // 🏢 C-Level Executives
+  {
+    name: "Ashish Dubey",
+    role: "Chief Developer Officer (CDO)",
+    bio: "Driving tech growth and innovative product development.",
+    image: "ashisht.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/ashish-dubey-8904a52b3/",
+      twitter: "#",
+      github: "https://github.com/dubey233445"
+    }
+  },
+  {
+    name: "Vibhanshu Mishra",
+    role: "Chief Operating Officer (COO)",
+    bio: "Driving Blockchain & Android Development and process optimization and strategic focus.",
+    image: "qwe.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/vibhanshu-mishra-8a351b336/",
+      twitter: "#",
+      github: "https://github.com/VibhanshuMishra11"
+    }
+  },
+  {
+    name: "Omkar Pandey",
+    role: "Chief Finance Officer (CFO)",
+    bio: "Driving growth through smart financial planning and seamless client-tech Coordination.",
+    image: "omq.png",
+    social: {
+      linkedin: "http://www.linkedin.com/in/omkarpandeycse/",
+      twitter: "#",
+      github: "https://github.com/Omkar03092006"
+    }
+  },
+  {
+    name: "Yash Pandey",
+    role: "Chief Marketing Officer (CMO)",
+    bio: "Driving brand growth with creativity, strategy, and innovation.",
+    image: "vbt.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/yash-pandey-70a36b31b",
+      twitter: "#",
+      github: "https://github.com/yashpandey205"
+    }
+  },
+  {
+    name: "Vaibhav Kumar",
+    role: "Chief Technology Officer (CTO)",
+    bio: "Leading with innovation to build scalable and impactful tech solutions.",
+    image: "tp.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/vaibhavkumar2611/",
+      twitter: "#",
+      github: "https://github.com/Vaibhav-Rep"
+    }
+  },
+
+  // 💡 Creative & Support Roles
+  {
+    name: "Aditi Mall",
+    role: "Social Media & Content Assistant",
+    bio: "Crafting content that builds brands and engages audience.",
+    image: "aditi.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/aditi-mall-27658b28a/",
+      twitter: "#",
+      github: "https://github.com/Omkar03092006"
+    }
+  },
+  {
+    name: "Akansha Shukla",
+    role: "Assistant Marketing Manager",
+    bio: "Assistant Marketing Officer, excels in Research and Strategic Marketing.",
+    image: "ak2.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/akanksha-sunil-shukla-7720072a7/",
+      twitter: "#",
+      github: "https://github.com/Akankshashukla7110"
+    }
+  },
+  {
+    name: "Tanya ojha",
+    role: "Social Media Manager & Graphics Designer",
+    bio: "Design Head, Social Media Manager.",
+    image: "aew.jpg",
+    social: {
+      linkedin: "http://linkedin.com/in/aparna-ojha-34b7aa381",
+      twitter: "#",
+      github: "#"
+    }
+  },
+
+  // 🆕 New Member
+  {
+    name: "Shifa Praveen ",
+    role: "UI & UX designer",
+    bio: "Passionate about building Ui for website and app.",
+    image: "rahul.png",
+    social: {
+      linkedin: "https://www.linkedin.com/in/shifa-parveen-45a5b0326/?originalSubdomain=in",
+      twitter: "#",
+      github: "https://github.com/shifa-23"
+    }
+  }
+];
+
 
   return (
     <section className="py-20 bg-muted/30">
