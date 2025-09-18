@@ -10,7 +10,10 @@ const Navbar = () => {
     { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "About Us", href: "#about" },import { useState } from "react";
+    { name: "About Us", href: "#about" },
+    { name: "Contact Us", href: "#contact" },
+  ];
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
